@@ -28,51 +28,111 @@
 
     <h1>TABLES</h1>
 
-    <table border="1" width="100%">
+    <table border="1" style="border-collapse: collapse;" width="100%">
         
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-            <th>Column 4</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+            </tr>
+        </thead>
 
-        <tr>
-            <td>Row 1 Cell #1</td>
-            <td>Row 1 Cell #2</td>
-            <td>Row 1 Cell #3</td>
-            <td>Row 1 Cell #4</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td>Row 1 Cell #1</td>
+                <td>Row 1 Cell #2</td>
+                <td>Row 1 Cell #3</td>
+                <td>Row 1 Cell #4</td>
+            </tr>
 
-        <tr>
-            <td>Row 2 Cell #1</td>
-            <td>Row 2 Cell #2</td>
-            <td>Row 2 Cell #3</td>
-            <td>Row 2 Cell #4</td>
-        </tr>
+            <tr>
+                <td>Row 2 Cell #1</td>
+                <td>Row 2 Cell #2</td>
+                <td>Row 2 Cell #3</td>
+                <td>Row 2 Cell #4</td>
+            </tr>
 
-        <tr>
-            <td>Row 3 Cell #1</td>
-            <td>Row 3 Cell #2</td>
-            <td>Row 3 Cell #3</td>
-            <td>Row 3 Cell #4</td>
-        </tr>
+            <tr>
+                <td>Row 3 Cell #1</td>
+                <td>Row 3 Cell #2</td>
+                <td>Row 3 Cell #3</td>
+                <td>Row 3 Cell #4</td>
+            </tr>
 
-        <tr>
-            <td>Row 4 Cell #1</td>
-            <td>Row 4 Cell #2</td>
-            <td>Row 4 Cell #3</td>
-            <td>Row 4 Cell #4</td>
-        </tr>
+            <tr>
+                <td>Row 4 Cell #1</td>
+                <td>Row 4 Cell #2</td>
+                <td>Row 4 Cell #3</td>
+                <td>Row 4 Cell #4</td>
+            </tr>
+        </tbody>
 
-        <tr>
-            <th>Table footer 1</th>
-            <th>Table footer 2</th>
-            <th>Table footer 3</th>
-            <th>Table footer 4</th>
-        </tr>
+        <tfoot>
+            <tr>
+                <th>Table footer 1</th>
+                <th>Table footer 2</th>
+                <th>Table footer 3</th>
+                <th>Table footer 4</th>
+            </tr>
+        </tfoot>
     </table>
 
+
+    <hr>
+    <h1> Combined Rows and Columns in Tables</h1>
+
+    <table border="1" style="border-collapse: collapse;" width="100%">
+
+        <thead>
+            <tr>
+                <th>Color</th>
+                <th>Subcolor</th>
+                <th>Hex value</th>
+                <th>RGB value</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3" bgcolor="blue">Blue</td>
+                <td>Baby Blue</td>
+                <td>#unknown</td>
+                <td>rgba(0,0,0)</td>
+            </tr>
+
+            <tr>
+                <td>Ocean Blue</td>
+                <td colspan="2">#unknown</td>
+            </tr>
+
+            <tr>
+                <td>Navy Blue</td>
+                <td>#unknown</td>
+                <td>rgba(0,0,0)</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3" bgcolor="red">Red</td>
+                <td>Baby Red</td>
+                <td>#unknown</td>
+                <td>rgba(0,0,0)</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">Light Red</td>
+            </tr>
+
+            <tr>
+                <td>Dark Red</td>
+                <td>#unknown</td>
+                <td>rgba(0,0,0)</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <!-- For "rowspan", you remove the <td> tag in the exact row in each of the <tr> tag but for "colspan", you only remove the <td> tag in only that same <tr> tag -->
 
 </body>
 </html>

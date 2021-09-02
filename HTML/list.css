@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: gainsboro;
+}
+
+#alter {
+    color: teal;
+    text-transform: uppercase;
+    background-color: white;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    font-size: 70px;
+    border-bottom: 1px;
+    border-bottom-color: turquoise;
+    border-bottom-style: solid;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+}
+
+.fa-App {
+    color: rgb(0, 255, 0);
+}
+
+.first {
+    list-style-type: none;
+    padding: 0px;
+}
+
+div > ol li {
+    border: 1px solid rgb(122, 117, 117);
+    padding: 10px;
+    margin: 0px;
+    width: 150px;
+    text-align: center;
+}
+
+.inside {
+    list-style-position: inside;
+    border: 1px solid red;
+}
+
+.outside {
+    list-style-position: outside;
+    border: 1px solid red;
+}
+
+ol.custom {
+    list-style-image: url('img/sea.jpg');
+}

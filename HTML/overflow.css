@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: gainsboro;
+}
+
+nav {
+    color: teal;
+    text-transform: uppercase;
+    background-color: white;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    font-size: 70px;
+    border-bottom: 1px;
+    border-bottom-color: turquoise;
+    border-bottom-style: solid;
+    font-family: Shrikhand, cursive;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+}

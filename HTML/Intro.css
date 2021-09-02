@@ -1,0 +1,192 @@
+nav {
+    color: teal;
+    font-size: 80px;
+    border-bottom-color: turquoise;
+    border-bottom-style: solid;
+    padding: 10px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+}
+
+div {
+    margin-top: 30px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.text-decor {
+    color: darkred;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-decoration-color: rgb(9, 255, 0);
+    text-decoration-style: dashed;
+}
+
+.span {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    text-decoration-style: solid;
+    text-transform: capitalize;
+}
+
+.para {
+    text-indent: 10px;
+}
+
+.space {
+    text-indent: 10%;
+    text-align: justify;
+    letter-spacing: 0.1em;
+}
+
+.height {
+    text-indent: 10px;
+    line-height: 2.5;
+}
+
+.direction {
+    margin-top: 2px;
+    direction: rtl;
+}
+
+.spacing {
+    text-indent: 10px;
+    word-spacing: 4mm;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#fonts {
+    text-indent: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#external-fonts {
+    text-indent: 8px;
+    font-family: 'Roboto', sans-serif;
+    /* Adding or removing the qoute still makes it work */
+}
+
+#new-font {
+    text-indent: 1opx;
+    text-align: center;
+    font-style: italic;
+}
+
+.height1{ font-size: 80px;}
+.height2{ font-size: 50px;}
+.height3{ font-size: 30px;}
+.height4{ font-size: 14px;}
+.height5{ font-size: 3px;}
+.height6{ font-size: -10px;}
+
+.calibri {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 20px;
+}
+
+#w900 { font-weight: 900;}
+#w700 { font-weight: 700;}
+#w500 { font-weight: 500;}
+#w400 { font-weight: 400;}
+#w300 { font-weight: 300;}
+#w100 { font-weight: 100;}
+
+#clip {
+    webkit-animation:move 5s ease-out 10 infinite alternate;
+    position: relative;
+    height: 100px; width: 100px;
+    background-color: purple;
+}
+
+.heighten {
+    height: 100px;
+    width: 200px;
+    background-color: crimson;
+    padding: 20px;
+    border: 5px;
+    border-style: dashed;
+    border-color: black;
+}
+
+.heighten1 {
+    height: 100px;
+    width: 200px;
+    background-color: crimson;
+    background-image: url(img/sea.jpg);
+    padding: 20px;
+    border: 5px;
+    border-style: dashed;
+    border-color: black;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+}
+
+.heighten2 {
+    height: 100px;
+    width: 200px;
+    background-color: crimson;
+    padding: 20px;
+    border: 5px;
+    border-style: dashed;
+    border-color: black;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+}
+
+.fv {
+    font-variant: small-caps;
+}
+
+.fa-blue {
+    font-size: 18px;
+    color: blue;
+    padding-right: 10px;
+}
+
+.fa-green {
+    font-size: 18px;
+    color: blue;
+    padding-right: 10px;
+}
+
+fa-red {
+    font-size: 18px;
+}
+
+.hovering:hover {
+    color: red;
+    text-decoration: underline;
+    font-weight: 900;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+.hovering:visited {
+    color: rgb(17, 144, 218);
+}
+
+.hovering:active {
+    color: rgb(10, 131, 62);
+}

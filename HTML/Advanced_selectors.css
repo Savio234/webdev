@@ -1,0 +1,70 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: gainsboro;
+    height: 2000px;
+}
+
+nav {
+    color: teal;
+    text-transform: uppercase;
+    background-color: white;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    font-size: 70px;
+    border-bottom: 1px;
+    border-bottom-color: turquoise;
+    border-bottom-style: solid;
+    font-family: Shrikhand, cursive;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+}
+
+form {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    width: 40%;
+    padding-top: 20px;
+}
+
+button {
+    display: block;
+    margin-top: 10px;
+    width: 60%;
+    color: gray;
+}
+
+[type] {
+    padding: 10px;
+    border: 1px dotted dodgerblue;
+}
+
+[type="password"] {
+    border: 2px solid red;
+}
+
+.fa.fa-question-circle[title~="incognito"] {
+    border: 1px solid rgb(4, 48, 26);
+}
+
+[href^="/login"] {
+    color: crimson;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+[href$=".pdf"] {
+    color: darkgreen;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

@@ -1,0 +1,57 @@
+body {
+    background-color: gainsboro;
+    padding: 0px;
+    margin: 0px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+nav {
+    color: teal;
+    text-transform: uppercase;
+    background-color: white;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    font-size: 70px;
+    border-bottom: 1px;
+    border-bottom-color: turquoise;
+    border-bottom-style: solid;
+    font-family: Shrikhand, cursive;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 5px;
+}
+
+table td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+table tbody tr {
+    border: 1px solid red;
+}
+
+table tr :hover {
+    background-color: #ccc;
+}
+
+table tr:hover td:hover {
+    background-color: #aaa;
+}
+
+thead {
+    background-color: rgb(124, 121, 121);
+}
+tfoot {
+    background-color: rgb(141, 138, 138);
+}

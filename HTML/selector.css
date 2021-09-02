@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+}
+
+.intro {
+    color: turquoise;
+    background-color: white;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    font-size: 70px;
+    border-bottom: 1px;
+    border-bottom-color: rgb(32, 31, 31);
+    border-bottom-style: solid;
+}
+
+.fa-face {
+    color: blue;
+}
+
+.selectors,
+.selectors1,
+.selectors2 {
+    color: red;
+    padding-left: 5px;
+}
+
+.body p span {
+    color: green;
+}
+
+p, div {
+    padding-left: 5px;
+}
+
+div > p > span {
+    color: cornflowerblue;
+}
+div > .child {
+    color: darkgoldenrod;
+}
+
+form label + input {
+    border: 1px solid blue;
+    padding: 5px;
+    background-color: transparent;
+}
+/* Only works if the input is directly after the label */

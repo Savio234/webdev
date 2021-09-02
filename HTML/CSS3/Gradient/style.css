@@ -1,0 +1,71 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: gainsboro;
+    height: 3000px;
+    background: linear-gradient(to bottom, #f5f5f5, #000);
+}
+
+nav {
+    color: teal;
+    text-transform: uppercase;
+    background-color: white;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    font-size: 70px;
+    border-bottom: 1px;
+    border-bottom-color: turquoise;
+    border-bottom-style: solid;
+    font-family: Shrikhand, cursive;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+}
+
+.linear {
+    border: 1px solid blue;
+    height: 600px;
+    width: 50%;
+    background-color: white;
+    background: linear-gradient(to bottom right,rgb(2, 2, 202), rgb(4, 26, 26));
+    font-size: 30px;
+    /* linear gradient varies with "degrees e.g 88deg" or varies with sides like e.g "to bottom right" etc */
+}
+
+.linear-gradients {
+    border: 1px solid red;
+    height: 500px;
+    width: 50%;
+    background-color: white;
+    background: linear-gradient(to bottom right,rgba(0, 0, 0, 1), rgba(125, 125, 125, 0.5));
+    font-size: 30px;
+}
+
+.repeating-linear {
+    border: 3px solid green;
+    height: 500px;
+    width: 50%;
+    background-color: white;
+    background: repeating-linear-gradient(25deg, red, blue 7%, yellow 10%);
+    font-size: 30px;
+}
+
+.radial {
+    border: 3px solid goldenrod;
+    height: 500px;
+    width: 50%;
+    background-color: white;
+    background: radial-gradient(red, blue, yellow);
+    font-size: 30px;
+}
+
+.repeating-radial {
+    border: 3px dotted royalblue;
+    height: 500px;
+    width: 50%;
+    background-color: white;
+    background: repeating-radial-gradient(circle, blue, red 5%, yellow 15%);
+    font-size: 30px;
+}

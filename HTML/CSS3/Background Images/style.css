@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: gainsboro;
+    height: 1500px;
+}
+
+nav {
+    color: teal;
+    text-transform: uppercase;
+    background-color: white;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    font-size: 70px;
+    border-bottom: 1px;
+    border-bottom-color: turquoise;
+    border-bottom-style: solid;
+    font-family: Shrikhand, cursive;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+}
+
+.background {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    background-size: contain;
+    border: 2px solid blue;
+    background-image: url('../../../../../Pictures/tiger.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;   
+}
+
+.multiple {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    background-size: 50%, 100%;
+    border: 2px solid blue;
+    background-image: url('../../../../../Pictures/waterfall.jpg'),  url('../../../../../Pictures/tiger.jpg');
+    background-position: left bottom, right top;
+    background-repeat: repeat-x, repeat-y;
+}

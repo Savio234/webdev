@@ -1,0 +1,65 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: gainsboro;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table th {
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+}
+
+thead {
+    background-color: #bbb;
+}
+
+thead th {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+tfoot {
+    background-color: #bbb;
+}
+
+tfoot th {
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+table td {
+    font-size: 17px;
+    text-align: center;
+    padding: 5px;
+}
+
+table tbody td {
+    text-transform: lowercase;
+}
+
+table tbody tr {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+table tbody tr:hover {
+    background-color: gray;
+    border-bottom: 1px solid black;
+}
+
+table tbody tr:hover td:hover {
+    background-color: #333;
+    color: white;
+}

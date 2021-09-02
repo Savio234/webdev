@@ -1,0 +1,45 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table th {
+    padding: 5px;
+    margin: 0px;
+}
+
+thead {
+    background-color: #bbb;
+}
+
+tfoot {
+    background-color: #bbb;
+}
+
+thead th {
+    border-bottom: 1px solid black;
+}
+
+tfoot th {
+    border-top: 1px solid black;
+}
+
+table td {
+    text-align: center;
+    padding: 5px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+table tbody tr:hover {
+    background-color: gray;
+    border-bottom: 1px solid black;
+}
+
+table tbody tr:hover td:hover {
+    background-color: #333;
+    color: white;
+}

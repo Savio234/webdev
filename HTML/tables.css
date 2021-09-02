@@ -1,0 +1,64 @@
+body {
+    background-color: gainsboro;
+    padding: 0px;
+    margin: 0px;
+}
+
+.table, i {
+    color: teal;
+    text-transform: uppercase;
+    background-color: white;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    font-size: 70px;
+    border-bottom: 1px;
+    border-bottom-color: turquoise;
+    border-bottom-style: solid;
+}
+
+i {
+    border-bottom: none;
+}
+
+/* a {
+    text-decoration: none;
+} */
+
+h1, h4 {
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    font-weight: bolder;
+}
+
+.link {
+    font-size: 50px;
+    font-weight: normal;
+    color:  rgb(0, 140, 255);
+}
+
+.fa-tables {
+    color: rgb(0, 140, 255);
+}
+
+.tee, .align, .effect {
+    border-collapse: collapse;
+    /* border-color: blue; */
+}
+
+.call {
+    vertical-align: top;
+}
+
+table td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table tr :hover {
+    background-color: #ccc;
+}
+
+table tr:hover td:hover {
+    background-color: #aaa;
+}

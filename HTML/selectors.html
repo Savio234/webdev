@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="icon" href="img/maldives.jpg" type="image/jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="selector.css">
+    <title>Selectors</title>
+</head>
+<body>
+
+    <nav class="intro">
+        Descendants Selectors from 
+        <i class="fa fa-facebook fa-face"></i>
+    </nav>
+    
+    <div class="selectors">First element</div>
+    <span class="selectors1">First element1</span>
+    <p class="selectors2">First element2</p>
+
+    <!-- <form action="" method="get">
+        <label for="Search">Search Engine</label>
+        <input placeholder="Type in URL or Search" type="search" id="Search" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="" method="get">
+        <div>
+            <select name="select_this" id="selected_item">
+                <option disabled selected value="">--Select an item--</option>
+                <option value="Option 1">Number 1</option>
+                <option value="Option 2">Number 2</option>
+                <option value="Option 3">Number 3</option>
+
+            </select>
+        </div>
+
+        <div>
+            <button type="submit">Subscribe!</button>
+        </div>
+    </form> -->
+
+    <h2>Descendants selectors and specifity</h2>
+    <div class="body">
+        Div text here
+        <p>
+            Paragraph text here
+            <span><em>Span text in here, change just me</em></span>
+        </p>
+
+        <span>One <code>span</code> here too</span>
+    </div>
+
+    <span>Another span text comes here</span>
+    <p>Another paragraph</p>
+
+    <h2>Child selectors</h2>
+    <div>
+        <p>This is a paragraph</p>
+        <p class="child">This is also a paragraph</p>
+        <p>
+            This is another paragraph
+            <span>In here, we have a span</span>
+        </p>
+    </div>
+
+    <h2>Adjacent Selectors</h2>
+    <form action="" method="get">
+
+        <label for="Your Name">Your Name</label>
+        <input type="text" name="Your Name" id="Your Name" required placeholder="Enter your Name">
+        <input type="email" name="Email" id="Email" required placeholder="example@email.com">
+    </form>
+</body>
+</html>

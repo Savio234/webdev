@@ -1,0 +1,183 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    height: 100%;
+    font-family: Alegreya,"Palatino Linotype","Book Antiqua",Palatino,Georgia,"Times New Roman", serif;
+}
+
+nav {
+    color: white;
+    background-color: rgb(209, 15, 15);
+    font-weight: 800;
+    font-size: 120px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px;
+    border-bottom-color: red;
+    border-bottom-style: solid;
+    position: static;
+    text-transform: uppercase;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+}
+
+/* @font-face {
+    font-family: localRobotoFontBlack;
+    src: url('fonts/Roboto-Black.ttf');
+} */
+
+@keyframes boxAnimation {
+    0% {
+        border: 3px solid red;
+    }
+    25% {
+        background-color: black;
+        width: 50%;
+    }
+    50% {
+        background-color: white;
+        color: black;
+        width: 300px;
+        height: 250px;
+    }
+    75% {
+        width: 80%;
+        height: 75%;
+    }
+    100% {
+        background-color: #8c1515;
+        height: 350px;
+        width: 400px;
+    }
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+    color: white;
+    background-color: #ccc;
+    animation-name: boxAnimation;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+/* .box:hover {
+    animation-name: boxAnimation;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+} */
+
+@keyframes blinkingAnimation {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blink {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+    color: white;
+    background-color: #ccc;
+    animation-name: blinkingAnimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 8;
+}
+
+@keyframes directAnimation {
+    0% {
+        border: 3px solid red;
+    }
+    25% {
+        border-radius: 50%;
+        background-color: gold;
+    }
+    50% {
+        background-color: white;
+        color: black;
+        width: 300px;
+        height: 250px;
+    }
+    75% {
+        width: 80%;
+        height: 75%;
+    }
+    100% {
+        background-color: #8c1515;
+        height: 350px;
+        width: 400px;
+        /* transform: scaleY(1.2); */
+    }
+}
+
+.direction {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+    color: white;
+    background-color: #ccc;
+    animation-name: directAnimation;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 4;
+    animation-timing-function: ease-out;
+}
+
+@keyframes project {
+    0% {
+        left: 10px;
+        top: 250px;
+    }
+    25% {
+        left: calc(100% - 160px);
+        top: 250px;
+    }
+    50% {
+        left: calc(100% - 160px);
+        top: calc(100% - 160px);
+    }
+    75% {
+        left: 10px;
+        top: calc(100% - 160px);
+    }
+    100% {
+        left: 10px;
+        top: 250px;
+    }
+}
+
+.project {
+    position: fixed;
+    left: 10px;
+    top: 250px;
+    width: 150px;
+    height: 150px;
+    background-color: #8c1515;
+    color: white;
+    animation-name: project;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 4;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+}

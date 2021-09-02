@@ -1,0 +1,67 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: gainsboro;
+    height: 500px;
+}
+
+nav {
+    color: teal;
+    text-transform: uppercase;
+    background-color: white;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    font-size: 70px;
+    border-bottom: 1px;
+    border-bottom-color: turquoise;
+    border-bottom-style: solid;
+    font-family: Shrikhand, cursive;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+}
+
+.rad {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 10px solid blue;
+    background-color: red;
+    border-radius: 30%;
+    position: relative;
+}
+.rad::after {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 10px solid black;
+    background-color: white;
+    border-radius: 150px;
+    position: absolute;
+    right: 20px;
+    z-index: -1;
+}
+
+.round {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 2px solid lawngreen;
+    border-radius: 50%;
+    background-image: url(../../img/mountains.jpg);
+    background-position: center;
+}
+
+.images {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    border-radius: 90px 20% 170px 50px;
+    border-top-left-radius: 35%;
+    border-bottom-right-radius: 29%;
+    background-image: url(../../img/water-1330252__480.jpg);
+    background-position: center;
+}

@@ -4,6 +4,7 @@ body {
     background-color: white;
     height: 100%;
     font-family: Alegreya,"Palatino Linotype","Book Antiqua",Palatino,Georgia,"Times New Roman", serif;
+    margin-top: 100px;
 }
 
 nav {
@@ -16,7 +17,15 @@ nav {
     border-bottom: 1px;
     border-bottom-color: red;
     border-bottom-style: solid;
-    position: static;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 a {
@@ -199,6 +208,7 @@ a {
     /* border-right: 1px solid rgba(156, 151, 151, 0.4); */
     position: relative;
     width: calc(30% - 26px);
+    top: 20px;
 }
 #div1link {
     font-size: 14px;
@@ -213,9 +223,9 @@ a {
 .div2 {
     display: inline-block;
     position: relative;
-    top: -26px;
+    top: 6px;
     right: -10px;
-    width: calc(30% - 27px);
+    width: calc(30% - -15px);
     border-right: 1px solid rgba(156, 151, 151, 0.4);
     border-left: 1px solid rgba(156, 151, 151, 0.4);
     padding-left: 15px;
@@ -228,8 +238,8 @@ a {
 .div3 {
     display: inline-block;
     position: relative;
-    top: 6px;
-    right: -10px;
+    top: 22px;
+    right: -20px;
     /* border-left: 1px solid rgba(156, 151, 151, 0.4); */
     width: calc(30% - 27px);
 }
@@ -684,4 +694,13 @@ a {
     top: -40px;
     right: px;
     width: calc(20% - 10px);
+}
+
+
+
+
+@media(max-width: 320px) {
+    nav {
+        width: 100%;
+    }
 }

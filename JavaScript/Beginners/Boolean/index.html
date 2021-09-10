@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Boolean Logic</title>
+</head>
+<body>
+    
+
+    <h1>Your Input was: </h1>
+    <h3 id="customInput">_______</h3>
+
+
+
+
+    <script>
+
+        var isCat = false
+        // 0 signifies false, 1 signifies true
+
+        if (isCat) {
+            console.log("I own a pet")
+        } else {
+            console.log("I own a pet, specifically a dog")
+        }
+        
+        var pet = prompt("Enter pet name: ")
+        if (pet.toLowerCase() == "azull" ) {
+            console.log(pet, " is my dog")
+            alert(pet + " is my dog")
+        } else {
+            console.log("Not my pet")
+            alert(pet + " is not my pet")
+        }
+
+        var custom = document.getElementById("customInput")
+        custom.innerText = pet
+
+
+    </script>
+
+
+</body>
+</html>

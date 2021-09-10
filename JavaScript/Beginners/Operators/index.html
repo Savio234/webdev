@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Accepting User Input</title>
+</head>
+<body>
+    
+
+    <h1>Your Input was: </h1>
+    <h3 id="customInput">_______</h3>
+
+
+
+
+    <script>
+
+        var age = prompt("Enter age: ")
+
+        if (age > 18) {
+            console.log('You are eligible to vote')
+            alert("You can vote")
+            var candidate = prompt("Enter your candidate of choosing: ")
+        } else {
+            console.log("Still ineligible to vote")
+            alert("Underage. Cannot Vote")
+        }
+
+        var inputNode = document.getElementById("customInput")
+        var input = candidate.toUpperCase()
+        inputNode.innerText = input
+        console.log(input)
+
+        
+        
+
+
+    </script>
+
+
+</body>
+</html>

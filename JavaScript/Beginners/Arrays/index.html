@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Arrays and Arithmetic</title>
+</head>
+<body>
+    
+
+    <!-- <h1>Your Input was: </h1>
+    <h3 id="customInput">_______</h3> -->
+
+
+
+
+    <script>
+
+        // Simple arithmetic
+
+        var num1 = 100
+        var num2 = 33
+        console.log(num1, num2)
+
+        var add = num1 + num2
+        console.log("Add is = ", add)
+
+        var minus = num1 - num2
+        console.log("Minus is = ", minus)
+
+        var product = num1 * num2
+        console.log("Product is = ", product)
+
+        var div = num1 / num2
+        console.log("Division is = ", div)
+
+        var exp = num1 ** num2
+        console.log("Exponential is = ", exp)
+
+        var mod = num1 % num2
+        console.log("Module is = ", mod)
+
+
+        // Arrays use square brackets
+
+        var arr = ["dominic", 30, true, 4.5, "nano", "gerald", "today", false]
+        var arr1 = ["savio", 24, true, 1997, "javascript", "html", "September", false]
+        var arr2 = ["peter", 28, true, 2025, "revvie", "godiva", "future", false]
+        var list = [arr, arr1, arr2]
+        console.log(list)
+        console.log(list.length)
+        console.log(arr)
+        console.log(arr[3])
+        console.log(arr.length)
+
+        var arrPush = arr.push("Jerry")
+        console.log(arrPush)
+
+        var sliceItems = arr1.slice(0, 3)
+        console.log(sliceItems)
+
+        var listPop = list.pop()
+        console.log(listPop)
+
+
+        // Conditioning a variable type to another variable type
+        var arrSplit = String(arr2)
+        console.log(arrSplit)
+
+
+        var str = String(arr)
+        console.log(str)
+
+        var num = Number(arr)
+        console.log(num)
+        
+
+
+    </script>
+
+
+</body>
+</html>

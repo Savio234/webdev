@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>String Manipulation</title>
+</head>
+<body>
+    
+
+    <div id="sentence" style="border: 2px solid black; margin-bottom: 20px; padding-bottom: 20px;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ex, inventore perferendis est blanditiis impedit eum delectus magni quod fuga, nesciunt sit quam deleniti laboriosam.
+    </div>
+
+    <div id="sentences">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed animi aut sequi unde dolorum atque saepe eveniet, eos numquam possimus laudantium itaque cumque, expedita eius.
+    </div>
+
+
+
+
+    <script>
+
+        
+        // String Manipulation
+
+        
+        var sent = document.getElementById(sentence);
+        var sentNode = sentence.innerText;
+        // Assigning the text inside(inner text) the div, with id "sentence",  to a variable named "sentNode"  
+        console.log("Sentence: ", sentNode)
+
+
+        // Changing the case of the string to either lowerCase or upperCase
+        var upper = sentNode.toUpperCase();
+        console.log(upper)
+        var lower = sentNode.toLowerCase();
+        console.log(lower)
+
+
+        // Selecting specific number of characters to be displayed by removing some
+        var firstEleven = sentNode.substr(11);
+        console.log(firstEleven)
+        var between = sentNode.substr(11, 42);
+        console.log("11 to 42 gives:", between)
+
+        // Spliting, joining and slicing the words and letters
+        var wordsSplit = sentNode.split(" ");
+        console.log("All words: ", wordsSplit)
+        var lettersSplit = sentNode.split("");
+        console.log("Each letter: ", lettersSplit)
+        // Changing the innerText to the text in the "bracket" varible
+        var bracket = "(" + wordsSplit.join(")(") + ")";
+        console.log(bracket)
+        sentence.innerText = bracket
+
+        // Selecting specific number of words to be displayed by removing some
+        var wordsSlice = wordsSplit.slice(5);
+        console.log(wordsSlice)
+        // Selecting and concatenating
+        var words = wordsSplit.slice(5, 10);
+        var newWord = words.join(" ");
+        console.log(newWord)
+        sentences.innerText = newWord
+
+
+    </script>
+
+
+</body>
+</html>

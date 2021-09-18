@@ -38,7 +38,63 @@
         // The variable 'defaultValue' stores whatever the 'return' statement returns
 
 
-        
+        function doMath(num) {
+            num = Number(num);
+            if (num) {
+                var addNum = (num + 100) / 3
+                console.log("Resulting number =", addNum)
+            } else {
+                return false;
+                console.log("Not a real number")
+            }
+            var add = document.getElementById("customInput")
+            add.innerText = num
+            var result = document.getElementById("answer")
+            result.innerText = addNum
+        }
+        doMath(prompt("Enter number: "))
+
+
+        function name(id) {
+            return document.getElementById("text")
+            console.log("Id is ", id)
+        }
+        var names = name("text")
+        names.innerText = "Custom inner Text"
+
+
+        // Celsius to Farenheit
+        function cTof(temp) {
+            // var farenheit = (temp * 1.8) + 32 or
+            return (temp * 1.8) + 32
+        }
+        var zero = cTof(0)
+        console.log(zero)
+
+        var twenty = cTof(20)
+        console.log(twenty)
+
+        var boiling = cTof(100)
+        console.log(boiling)
+
+        var freeze = cTof(-40)
+        console.log(freeze)
+
+
+        function kelvin(kel) {
+            // var temperature = kel + 273
+            // console.log(temperature)
+            return(kel + 273)
+        }
+        // kelvin(100)
+        var first = kelvin(30)
+        console.log(first)
+
+        var last = kelvin(50)
+        console.log(last)
+
+        var middle = kelvin(160)
+        console.log(middle)
 
         
 

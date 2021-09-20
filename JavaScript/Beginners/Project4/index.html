@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mini project #4</title>
+</head>
+<body>
+    
+
+    <div>
+        Total Bill = : 
+        <p style="display: inline-block;" id="custom">
+            _____
+        </p>
+        <p id="elem"></p>
+    </div>
+    <h1>Your tip amount was: </h1>
+    <h3 style="display: inline-block;" id="customInput">_______</h3>
+
+
+
+
+    <script>
+
+        function total (Amount, tip=0.1) {
+            var Amount = prompt("Enter amount: ")
+            var cost = Number(Amount)
+            var tipAmount = cost * tip
+            var totalAmount = cost + tipAmount
+
+            var amount = document.getElementById("custom")
+            custom.innerText = ("$" + totalAmount)
+
+            return tipAmount
+        }
+
+        var tip = total()
+        
+        var get = document.getElementById("customInput")
+        customInput.innerText = ("$"+ tip)
+
+        
+        
+
+        
+        
+
+
+    </script>
+
+
+</body>
+</html>

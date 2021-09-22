@@ -47,6 +47,51 @@
         }
 
         
+
+
+        var num = 100 
+        function calculate() {
+            var input = document.querySelector(".form-control")
+            var value = Number(input.value)
+            var totalValue = value + num
+            console.log(totalValue)
+
+            var h1 = document.querySelector("h1")
+            var span = h1.querySelector("span")
+            span.innerText = totalValue
+
+        }
+
+        
+        
+        function link() {
+
+            var text = document.querySelector(".text-control")
+            var textTo = String(text.value)
+            var firstEight = textTo.substr(0, 8)
+            console.log(firstEight)
+
+            if (firstEight == "https://") {
+                console.log("Valid URL")
+            } else {
+                textTo = "https://" + textTo
+                console.warn("Invalid URL")
+            }
+
+            var textLink = "<a href = '" + textTo.toLowerCase() + "'>" + textTo.toLowerCase() +"</a>"
+
+            var h2 = document.querySelector("h2")
+            var spanLink = h2.querySelector("span")
+            spanLink.innerHTML = textLink
+
+            
+        }
+
+        
+        
+
+
+
     </script>
         
         

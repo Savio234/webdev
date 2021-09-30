@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Query Selectors</title>
+</head>
+<body>
+    
+
+    <small>
+        I'm the first of my kind, means i'd be changed first
+    </small>
+
+    <h1 class="title">
+        Hello world, this is the mid section
+        <small>
+            Change me as well
+        </small>
+
+    </h1>
+    
+    <a href="">Change link text</a>
+
+    <ul>
+        <li>Number 1</li>
+        <li>Number 2</li>
+        <li>Number 3</li>
+        <li>Number 4</li>
+        <li>Number 5</li>
+        <li>Number 6</li>
+        <li>Number 7</li>
+    </ul>
+
+    <input type="text" name="" class="form-control" value="Enter text" style="padding: 25px; font-size: 18px; border: 2px solid #98cff5;">
+
+
+
+
+    <script>
+
+        var title = document.querySelector(".title")
+        // title.innerText = "Changed using a class"
+
+        // var small = document.querySelector("small")
+        // small.innerText = "Look!!! I changed too!"
+
+        var small = title.querySelector("small")
+        small.innerText = "Finally!"
+
+        var a = document.querySelector("a")
+        a.innerText = "Link text changed"
+
+
+    </script>
+        
+
+    <script>
+
+        var input = document.querySelector(".form-control")
+        console.log(input.value)
+
+    </script>
+        
+        
+
+    <script>
+
+        var liS = document.querySelectorAll("li")
+        liS[5].innerText = "Text definitely changed"
+        console.log(liS[5].innerText)
+
+        liS[0].innerHTML = "<a href = '#'>Link in a list. not bad!</a>"
+        console.log(liS[0].innerHTML)
+
+    </script>
+
+
+</body>
+</html>

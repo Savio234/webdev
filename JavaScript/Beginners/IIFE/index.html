@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Anonymous functions and IIFE</title>
+</head>
+<body>
+    
+
+    <div>
+
+        <input type="text" name="" id="name" class="name" value="Kylo Ren" style="width: 40%; padding: 15px; margin-top: 20px; margin-left: 20px; color: black; border: 2px solid blue;">
+
+    </div>
+    
+
+
+
+
+
+    <script>
+
+        // This is an anonymous function
+
+        var getName = function() {
+            return document.querySelector(".name").value
+        }
+    </script>       
+
+            
+
+
+    <script>
+
+        // This is an IIFE
+
+        (function loadMath() {
+            var num1 = 10000
+            console.log("num1 =", num1)
+
+            var num2 = 3000
+            console.log("num2 =", num2)
+
+            var ans = num2/num1
+            console.log("Answer is", ans)
+        })();
+                
+
+
+    </script>
+        
+
+    
+
+
+</body>
+</html>

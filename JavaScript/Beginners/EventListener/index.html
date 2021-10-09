@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Event Listeners</title>
+</head>
+<body>
+    
+
+    
+        <div class="firstEvent">
+
+            <button class="button" style="background-color: rgb(0, 47, 255); padding: 15px; margin-left: 20px; margin-top: 20px; color: white;">
+                Click here
+            </button>
+    
+            <h1 style="margin-left: 20px;" class="total">
+                
+            </h1>
+
+        </div>
+    
+        <input type="text" name="" id="nameValue" style="margin-left: 20px; margin-top: 20px; width: 80%; padding: 10px; border: 2px solid rgb(0, 47, 255);">
+
+        <h2>
+            Hello 
+            <span class="changeName">_____</span>
+        </h2>
+
+
+    <script>
+
+        // Introduction to Event Listeners
+
+        var btn = document.querySelector(".button")
+        btn.addEventListener("click", clickCount)
+
+        var totalClicks = 0
+        // totalClicks is defined outside the function because the count will always remain zero if defined inside of the function
+        // Hence, why its scope is global
+
+        function clickCount() {
+            totalClicks = totalClicks + 1
+            document.querySelector(".total").innerText = ("Total clicks = " + totalClicks)
+        }
+
+
+
+        // Using events Listeners to get input value
+
+        var input = document.getElementById("nameValue")
+        input.addEventListener("input", inputValue)
+
+        // var text = document.getElementById("nameValue")
+        // text.addEventListener("keyup", inputValue)
+
+        function inputValue() {
+            var value = input.value
+            document.querySelector(".changeName").innerText = value
+
+        }
+
+
+
+
+
+    </script>       
+
+            
+
+
+    
+        
+
+    
+
+
+</body>
+</html>

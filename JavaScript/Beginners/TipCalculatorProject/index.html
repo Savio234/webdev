@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tip Calculator Project</title>
+</head>
+<body>
+    
+
+    
+    <h1 class="h1">Tip Calculator</h1>
+
+    <div>
+
+        <label for="billAmount">Bill amount (in dollars): </label>
+        <input type="number" name="billAmount" id="billAmount" class="bill" placeholder="i.e  25.999" onclick="">
+
+    </div>
+
+    <div>
+
+        <label for="tipAmount">Tip amount (as a %): </label>
+        <input type="number" name="tipAmount" id="tipAmount" min="1" step="1" max="100" class="bill" placeholder="i.e  29" onclick="">
+
+    </div>
+
+    <div>
+        <button type="button" onclick="bill()">Calculate Tip and Total Bill</button>
+    </div>
+
+    <div>
+
+        <h1>Total Bill = </h1> 
+        <span style="display: inline-block;" id="custom">_______</span>
+
+    </div>
+    
+    <div>
+
+        <h1>Your tip amount was = </h1>
+        <span style="display: inline-block;" id="customInput">_______</span>
+
+    </div>
+
+
+
+    <script>
+
+            
+            function bill () {
+                
+                var tip = document.getElementById("tipAmount")
+                var tipValue = Number(tip.value)
+
+                var bill = document.getElementById("billAmount")
+                var billValue = Number(bill.value)
+                
+                var tipAmount = billValue * (tipValue/100)
+                var totalBill = billValue + tipAmount
+
+                var amount = document.getElementById("custom")
+                custom.innerText = ("$" + totalBill)
+
+                var get = document.getElementById("customInput")
+                customInput.innerText = ("$"+ tipAmount)
+
+                return tipAmount
+            }
+
+                var tip = bill()
+
+            
+        
+                
+
+
+    </script>
+        
+
+    
+
+
+</body>
+</html>

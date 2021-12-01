@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Loops</title>
+</head>
+<body>
+    
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam doloremque nesciunt nostrum repellat assumenda harum incidunt eligendi exercitationem deleniti ipsa necessitatibus unde nihil iusto, similique sint, ratione praesentium quae veritatis iure reiciendis autem ab. Iste ipsa explicabo iure illo deserunt dolore nobis nesciunt. Nulla perspiciatis voluptatibus neque asperiores, repellat ipsum?
+    </p>
+
+    <div>
+        <ul>
+            <li class="innerList">Item 1</li>
+            <li class="innerList">Item 2</li>
+            <li class="innerList">Item 3</li>
+            <li class="innerList">Item 4</li>
+            <li class="innerList">Item 5</li>
+            <li class="innerList">Item 6</li>
+            <li class="innerList">Item 7</li>
+            <li class="innerList">Item 8</li>
+            <li class="innerList">Item 9</li>
+            <li class="innerList">Item 10</li>
+            <li class="innerList">Item 11</li>
+            <li class="innerList">Item 12</li>
+            <li class="innerList">Item 13</li>
+            <li class="innerList">Item 14</li>
+            <li class="innerList">Item 15</li>
+        </ul>
+    </div>
+        
+    <div>
+
+        <input type="number" name="" class="guess" id="" style="border: 2px solid blue; padding: 15px; margin-left: 30px; margin-top: 30px; border-radius: 6px; width: 80%;">
+
+    </div>
+
+    <script>
+
+        // Introduction to Loops
+
+        // FOR LOOPS
+
+       for (var b=10; b <= 20; b++) {
+        console.log(b)
+       }
+       
+        var names = ['dominic', 'gerald', 'great', 'grant', 'arnold', 'godiva', 'savio']
+
+        function toEmailAddress(name) {
+            return name.toLowerCase() + "@gmail.com"
+        }
+
+
+        for (var i=0; i < names.length; i++) {
+            var currentName = toEmailAddress(names[i])
+            console.log(currentName)
+        }
+
+        var words = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam doloremque nesciunt nostrum repellat assumenda harum incidunt eligendi exercitationem deleniti ipsa necessitatibus unde nihil iusto, similique sint, ratione praesentium quae veritatis iure reiciendis autem ab. Iste ipsa explicabo iure illo deserunt dolore nobis nesciunt. Nulla perspiciatis voluptatibus neque asperiores, repellat ipsum?"
+        var wordsSplit = words.split(" ")
+
+        for (var j=0; j < wordsSplit.length; j++) {
+            var currentEmail = wordsSplit[j].toLowerCase() + "@gmail.com"
+            // if (j == 10) {
+            //     break;
+            // }
+            if (j % 2 == 0) {
+                continue;
+            }
+            console.log(j, currentEmail)
+        }
+
+
+        //  WHILE LOOPS
+        var num = Number(prompt("Enter a number: "))
+        var initial = 0
+        while (initial <= num) {
+            console.log(initial)
+
+            initial++
+        }
+
+
+        // forEACH 
+        
+        var cars = ['Ferrari', 'Lamborgini', 'Acura', 'Crosstour', 'Mustang', 'Koenigsegg', 'Bugatti']
+        cars.forEach(function(wheels, index) {
+            console.log(index, wheels)
+        });
+
+        var lis = document.querySelectorAll(".innerList")
+        lis.forEach(function(list, index){
+            console.log(list.innerText)
+            if (index >= 10) {
+                list.remove()
+                return
+            }
+            list.innerText = (index * 12) + " is the index number multiplied by 12"
+        });
+        
+
+
+    </script>
+
+            
+    
+
+
+</body>
+</html>

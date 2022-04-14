@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    /* background: radial-gradient(#77e3e5, #05aac5); */
+    height: 100%;
+    font-family: "Gilroy";
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../../webdev/HTML/Fonts/Gilroy/Gilroy-FREE/Gilroy-Light.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calc {
+    width: 45vw;
+    height: 70vh;
+    border-radius: 20px;
+    margin-top: 5%;
+    background: radial-gradient(rgba(255, 255,255, 0.09), rgba(255, 255, 255, 0.9));
+}
+
+.result-body {
+    position: absolute;
+    height: 70vh;
+    width: 20vw;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+.result-body h1 {
+    font-size: 50px;
+    margin: 40px 0;
+    text-align: center;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 10px 30px;
+}
+
+.show {
+    margin-top: 70px;
+}
+
+.inp {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 70vh;
+}
+
+input {
+    font-weight: normal;
+    border-radius: 10px;
+    margin: 13px;
+    padding: 20px;
+    height: 40px;
+    width: 180px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border: 1px solid rgb(223, 217, 217);
+    background: rgba(0, 0, 0, 0.05);
+    color: white;
+}
+
+.main {
+    margin-left: 45px;
+}
+
+button {
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    border: 1px solid rgb(223, 217, 217);
+    background: rgba(0, 0, 0, 0.05);
+    color: royalblue;
+}
+
+::placeholder {
+    font-weight: 900;
+}

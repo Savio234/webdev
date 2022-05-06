@@ -15,6 +15,8 @@
     
 
     <h1 class="template">Template Literals</h1>
+
+    <h2 class="object">Object Literals</h2>
     
 
 
@@ -27,9 +29,35 @@
         const name = "Dominic"
         const firstName = "Amara"
         let literal = document.querySelector(".template")
-        
-        literal.innerText = (`Hi, my name is ${name}. ${firstName} is my first name though.`)
+
+        literal.innerText = (`Hi, my name is ${name}. ${firstName} happens to be my first name though.`)
         console.log(literal.innerText)
+
+
+
+    //  Object Literals
+
+        
+        const person = {
+
+            "name": "Dominic",
+            "age": "24",
+            "language": "English, Igbo and French-ish",
+
+            // "speak": function speak() {}
+            // Object literals enable us to use the code below which is shorter and better 
+            // Because the 'key' and the 'value' of the function are the exact same thing
+
+            speak() {
+                let obj = document.querySelector(".object")
+                obj.innerText = (`I speak different languages: ${person.language} `)
+                console.log(`I speak English`)
+            }
+        }
+        
+        console.log(person.name)
+        person.speak()
+        
 
 
         

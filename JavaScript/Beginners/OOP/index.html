@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Objects Oriented Programming</title>
+</head>
+<body>
+    
+
+    <h1>Your Input was: </h1>
+    <h3 id="inputData">_______</h3>
+        
+
+
+    <script>
+
+        // Introduction to Object Oriented Programming
+
+        class person {
+            constructor(name, age, food) {
+                console.log(name, age, food)
+                this.name = name
+                this.age = age
+                this.food = food
+            }
+
+            makeSound () {
+                console.log('I can talk')
+                console.log(this.name + " says 'hmmmm, how delicious' to the "  + this.food)
+            }
+        }
+
+        const Simon = new person("Dominic", "24", "Yam and egg sauce")
+        const David = new person("David", "24", "Fried rice")
+        Simon.makeSound()
+
+        let textData = document.getElementById("inputData")
+        textData.innerText = Simon
+        
+        
+        
+
+
+
+
+    </script>       
+
+            
+
+
+    
+        
+
+    
+
+
+</body>
+</html>

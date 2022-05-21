@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Objects</title>
+</head>
+<body>
+    
+
+    <h3 id="answer"></h3>
+    <h3 id="text"></h3>
+        
+
+
+    <script>
+
+        // Introduction to Objects
+
+        person = {
+            "name": "Dominic",
+            "animal": "Dog",
+            "age": "24",
+            "occupation": "Aspiring dev"
+
+        }
+        console.log(typeof(person))
+
+        person['shoes'] = '4 pairs'
+        console.log(person)
+        let personShoe = document.getElementById('answer')
+        personShoe.innerText = ("The object 'person' contains the following items " + person.name + " ," + person.animal + " ," + person.age + " ," + person.occupation + ".")
+
+        person["weight"] = function() {
+            console.log(person.name + " weighs 94kg")
+        }
+        console.log(person)
+
+        person.fullName = function() {
+            console.log(this.name + " Ezeifejafor Amarachukwu SP")
+        }
+        console.log(person)
+
+            
+        
+        var things = {
+            'name': 'Dominic',
+            'sound': function() {
+                console.log("talk")
+            },
+            'age': "24",
+            'cars': '2'
+        }
+        console.log(things.name)
+        let thingsList = document.getElementById('text')
+        thingsList.innerText = ("The object 'things' contains the following " + things.name + " ," + things.sound + " ," + things.age + " ," + things.cars + ".")
+        
+
+
+
+
+    </script>       
+
+            
+
+
+    
+        
+
+    
+
+
+</body>
+</html>

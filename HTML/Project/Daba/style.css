@@ -508,6 +508,7 @@ ul {
     background: linear-gradient(0deg, rgba(6, 1, 37, 0.25), rgba(6, 1, 37, 0.25)); 
     background-image: url("img/landingPage/booming.png");
     background-repeat: no-repeat;
+    background-size: cover;
     width: 60rem;
     height: 40rem;
 }
@@ -515,6 +516,7 @@ ul {
     background: linear-gradient(0deg, rgba(6, 1, 37, 0.25), rgba(6, 1, 37, 0.25)); 
     background-image: url("img/landingPage/rapid.png");
     background-repeat: no-repeat;
+    background-size: cover;
     width: 60rem;
     height: 40rem;
 }

@@ -1,4 +1,3 @@
-
 const menu = document.querySelector(".mob-nav");
 const hamburger = document.querySelector(".hamburger");
 const close = document.querySelector(".closeIcon");
@@ -9,8 +8,8 @@ hamburger.addEventListener("click", toggleMenu);
 
 menu.classList.contains("showMenu");
 
-
 function toggleMenu() {
+
     if (menu.classList.contains("showMenu")) {
         menu.classList.remove("showMenu");
         close.style.display = "none";
@@ -25,4 +24,5 @@ function toggleMenu() {
         menu.style.width = "115rem";
         menu.style.height = "151rem";
     }
+
 }

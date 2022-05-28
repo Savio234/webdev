@@ -633,11 +633,71 @@ ul {
     margin-right: 2.5rem;
     color: #fff;
 }
+.horizontal-card-img {
+    width: 95%;
+}
 
 
 
 
 
+
+
+@media (min-width: 1900px) and (max-width: 2560px) {
+    .hero-image1, .hero-image2 {
+        width: 185%;
+        max-width: none;
+    }
+    .hero-image2 {
+        top: 1.5rem;
+        right: -23rem;
+    }
+    .horizontal-card-img {
+        width: 95%;
+        max-width: none;
+    }
+    .vertical-card-img1, .vertical-card-img2 {
+        max-width: none;
+        width: 100%;
+    }
+    .invest-card-h {
+        font-size: 2rem;
+    }
+    .access-logo, .firna-logo, .diligent-logo {
+        width: 40%;
+    }
+    .investment-h {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .investment-img, .more-img, .future-img {
+        width: 100%;
+        max-width: none;
+    }
+    .ebook-img {
+        width: 70%;
+        max-width: none;
+    }
+    .rapid {
+        margin-left: 55rem;
+    }
+    .invest-now-card-h {
+        padding: 4rem 0 4rem 2rem;
+    }
+    .market-bg {
+        background-size: cover;
+    }
+    .ebook-img-padding {
+        align-items: flex-end;
+        align-content: flex-end;
+        justify-content: flex-end;
+    }
+    .footer-icon-link {
+        color: #16054e;
+    }
+}
 
 
 @media (max-width: 1024px) {
@@ -723,27 +783,15 @@ ul {
 
 
 @media (max-width: 768px) {
-    .access, .firna, .diligent {
-        margin: 3rem 26rem 20rem;
-    }
     .invest-card-margin {
         margin-bottom: 20rem;
     }
-    .invest-card {
-        width: 76rem;
-        height: 65rem;
-        border-radius: 3rem;
-        padding: 4rem 5rem;
-    }
-    .invest-card-h {
-        margin-top: 18rem;
-    }
-    .invest-card-p {
-        margin: 2rem 1.2rem;
+    .invest-card img {
+        width: 50%;
     }
     .access-logo, .firna-logo, .diligent-logo {
-        top: -12rem;
-        left: 23.5rem;
+        top: -10rem;
+        left: 8.5rem;
     }
     #footer {
         display: none;
@@ -751,18 +799,41 @@ ul {
 }
 
 @media (max-width: 650px) {
+    .invest-card {
+        width: 76rem;
+        height: 84.7rem;
+    }
+    .invest-card img {
+        width: 60%;
+    }
+    .invest-card-h {
+        font-size: 4rem;
+        line-height: 6rem;
+        margin-top: 30rem;
+        padding-top: 5rem;
+    }
+    .invest-card-p {
+        font-size: 3.2rem;
+        line-height: 4.8rem;
+    }
     .access-logo, .firna-logo, .diligent-logo {
         top: -14rem;
-        left: 20.5rem;
+        left: 14.5rem;
     }
     .invest-now-card-container {
         flex-wrap: wrap;
+    }
+    .invest-now-card-img {
+        width: 15%;
     }
     .booming, .rapid {
         margin: 0 32rem;
     }
     .rapid {
         margin-top: 6rem;
+    }
+    .access, .firna, .diligent {
+        margin: 3rem 26rem 20rem;
     }
 }
 
@@ -782,9 +853,8 @@ ul {
     .invest-card-container {
         padding-bottom: 7rem;
     }
-    .access-logo, .firna-logo, .diligent-logo {
-        top: -25rem;
-        left: 16.5rem;
+    .market-bg {
+        background-size: cover;
     }
 }
 
@@ -798,61 +868,5 @@ ul {
     }
     .hero-img {
         top: 19.6rem;
-    }
-    .invest-card-container {
-        padding-bottom: 10rem;
-    }
-    .access-logo, .firna-logo, .diligent-logo {
-        top: -27rem;
-        left: 14rem;
-    }
-    .love-investing-h {
-        padding-bottom: 9rem;
-    }
-}
-
-
-@media (max-width: 425px) {
-    .invest-card-margin {
-        margin-bottom: 26rem;
-    }
-    .invest-card-h {
-        margin-top: 24rem;
-        padding-top: 5rem;
-    }
-    .access-logo, .firna-logo, .diligent-logo {
-        top: -25rem;
-        left: 11.5rem;
-    }
-    .access, .firna, .diligent {
-        margin-bottom: 28rem;
-    }
-}
-
-
-@media (max-width: 375px) {
-    .access-logo, .firna-logo, .diligent-logo {
-        top: -30rem;
-        left: 7rem;
-    }
-    .access, .firna, .diligent {
-        margin-bottom: 40rem;
-    }
-    .love-investing-h {
-        padding-bottom: 15rem;
-    }
-}
-
-
-@media (max-width: 320px) {
-    .access-logo, .firna-logo, .diligent-logo {
-        top: -40rem;
-        left: 3rem;
-    }
-    .access, .firna, .diligent {
-        margin-bottom: 60rem;
-    }
-    .love-investing-h {
-        padding-bottom: 22rem;
     }
 }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Extended Classes</title>
+</head>
+<body>
+    
+
+    <h1>Your Input was: </h1>
+    <h3 id="inputData">_______</h3>
+        
+
+
+    <script>
+        
+
+        // Extending Classes
+
+        class animal {
+            constructor(species, weight, height) {
+                this.species = String(species)
+                this.weight = Number(weight)
+                this.height = Number(height)
+            }
+
+            getInfo() {
+                console.log(this.species + " weighs " + this.weight + "lbs and is " + this.height + "m tall.")
+                let animalInfo = document.getElementById('inputData')
+                animalInfo.innerText = (this.species + " weighs " + this.weight + "lbs and is " + this.height + "m tall.")
+            }
+        }
+        const tiger = new animal("Tiger", 260, 1.53)
+        tiger.getInfo()
+
+        
+    </script>       
+
+            
+
+
+    
+        
+
+    
+
+
+</body>
+</html>

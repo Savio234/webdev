@@ -1,0 +1,970 @@
+html {
+    font-size: calc(100vw/1499 * 10);
+}
+@media screen and (max-width: 1023) {
+    html {
+        font-size: calc(100vw/1023 * 10);
+    }
+}
+@media screen and (max-width: 650) {
+    html {
+        font-size: calc(100vw/650 * 10);
+    }
+}
+@media screen and (max-width: 485) {
+    html {
+        font-size: calc(100vw/485 * 10);
+    }
+}
+
+body {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    /* background-color: #e5e5e5; */
+    color: #fff;
+    height: auto;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+@font-face {
+    font-family: New York;
+    src: url('fonts/NewYork/NewYorkExtraLargeRegular.otf');
+}
+@font-face {
+    font-family: Proxima;
+    src: url('fonts/Proxima/Rene\ Bieder\ \ Milliard\ Book.otf');
+}
+* {
+    box-sizing: border-box;
+}
+
+#header {
+    padding: 2rem 10rem;
+}
+#mob-header {
+    display: none;
+}
+.header-row {
+    position: relative;
+}
+.nav-logo-section, .header-nav-section {
+    flex: 1 1 50%;
+}
+.nav-logo-section {
+    padding-right: 10rem;
+}
+.header-nav-section {
+    padding-left: 10rem;
+}
+.solution {
+    margin-left: 1.3rem;
+}
+.nav-list-item {
+    margin: 0 0.8rem;
+    padding: 2rem 0.2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+}
+.nav-list-link {
+    color: #001540;
+    font-family: Proxima;
+    font-weight: 600;
+}
+.logo-padding {
+    padding-bottom: 2.3rem;
+}
+.list-item-padding {
+    padding-top: 2.8rem;
+}
+.enterprise-color {
+    color: #5285f2;
+}
+.inner-btn {
+    padding: 0.4rem 0.2rem;
+}
+.nav-list-btn {
+    background-color: #5285f2;
+    padding: 1.6rem 6.4rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    font-family: Proxima;
+}
+
+
+
+
+.flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+}
+.white {
+    color: #fff;
+}
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+.flex-justify {
+    justify-content: center;
+}
+.flex-around {
+    justify-content: space-around;
+}
+.flex-between {
+    justify-content: space-between;
+}
+.flex-center {
+    align-items: center;
+}
+.flex-end {
+    align-items: flex-end;
+}
+.padding-0 {
+    padding: 0;
+}
+.margin-0 {
+    margin: 0;
+}
+img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+}
+.w-100 {
+    width: 100%;
+}
+.h-100 {
+    height: 100%;
+}
+.align-center {
+    justify-content: center;
+    align-items: center;
+}
+li, ul {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+}
+
+
+.outer-padding {
+    margin: 0 10rem;
+}
+.margin-top {
+    margin-top: 8rem;
+}
+.margin-bottom {
+    margin-bottom: 8rem;
+}
+.centering {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.hero {
+    margin-bottom: 21.2rem;
+}
+.hero-bg {
+    background-image: url("img/landingPage/herobgLite.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-box-size {
+    margin: 10rem 0 2.4rem;
+    padding: 0 11rem;
+}
+.hero-p-box {
+    margin: 0 25rem;
+}
+.hero-btn-container {
+    margin-top: 5.7rem;
+    padding: 0 30.4rem;
+}
+.hero-h {
+    font-family: New York;
+    font-weight: 800;
+    font-size: 8rem;
+    line-height: 10rem;
+    color: #001540;
+    max-width: 100.2rem;
+}
+.hero-p {
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    color: #647aa8;
+}
+.hero-btn {
+    height: 5.6rem;
+    margin: 2rem 1.6rem;
+    padding: 1.6rem 6.4rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: Proxima Nova;
+    font-weight: 700;
+    border-radius: 0.4rem;
+}
+.bg-blue {
+    background: #5285f2;
+}
+.color-blue {
+    color: #5285f2;
+    background: #ecf2ff;
+}
+
+
+.partners-h {
+    font-family: New York;
+    font-size: 4rem;
+    line-height: 6rem;
+    font-weight: 700;
+    color: #001540;
+    margin: 0 20.7rem 6.4rem;
+}
+.partners-container {
+    padding: 0 5.2rem;
+}
+.img-container {
+    background: #fff;
+    width: 19.9rem;
+    height: 6rem;
+}
+.multilingual {
+    padding-left: 3rem;
+}
+.branch {
+    padding-left: 4rem;
+}
+.box {
+    padding-left: 6rem;
+}
+.artisan {
+    padding-left: 5rem;
+}
+
+.stats {
+    height: 23.6rem;
+    margin-top: 13.3rem;
+}
+
+.flex-50 {
+    flex: 0 1 50%;
+}
+.services-h {
+    color: #000e29;
+    margin: 0;
+    padding: 0 0 1.6rem 0;
+}
+.services-p {
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    color: #647aa8;
+    max-width: 70rem;
+}
+.services-content-container {
+    margin-top: 16rem;
+}
+.wallet-card-container {
+    margin-bottom: 24.3rem;
+}
+.staking-card-container {
+    margin-bottom: 17rem;
+}
+.wallet-card-padding {
+    margin-top: 9rem;
+}
+.wallet-card-img {
+    margin-right: 10rem;
+}
+.wallet-card-h {
+    line-height: 6.4rem;
+    margin: 0 0 2.4rem 0;
+    color: #000e29;
+}
+.wallet-card-p {
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    color: #647aa8;
+    margin: 0 0 5.6rem 0;
+}
+.wallet-btn {
+    width: 21.1rem;
+    margin: 2rem 1.6rem 2rem 0;
+}
+.left-curve {
+    margin: 0 56rem;
+}
+.right-curve {
+    margin: 0 56.6rem 0 53.3rem;
+}
+
+.features-card-h {
+    margin: 0 0 0.5rem 0;
+}
+.features-card-p {
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    color: #647aa8;
+    margin: 0 0 3.24rem 0;
+}
+.features-list-content {
+    margin: 0 0 2.43rem 0;
+}
+.features-list-img {
+    margin-right: 1.6rem;
+    width: 10%;
+}
+.features-list-h {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    color: #000e29;
+    font-family: Proxima;
+    font-weight: 600;
+}
+.features-list-p {
+    margin: 0 0 0 4.8rem;
+    color: #647aa8;
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.staking-card-img {
+    position: relative;
+}
+.staking-img-1 {
+    position: absolute;
+    top: 2rem;
+    right: 6.5rem;
+}
+.staking-img-1a {
+    position: absolute;
+    top: 6rem;
+    right: 10rem;
+    width: 15%;
+    z-index: -1;
+}
+.staking-img-1b {
+    position: absolute;
+    top: 23.6rem;
+    right: -4rem;
+    width: 40%;
+}
+.staking-img-1c {
+    position: absolute;
+    top: 14.3rem;
+    right: 12.5rem;
+    width: 40%;
+}
+.staking-img-1d {
+    position: absolute;
+    top: 37.5rem;
+    right: 23rem;
+    width: 55%;
+}
+.staking-img-2 {
+    position: absolute;
+    top: 10.5rem;
+    right: 5rem;
+}
+.staking-img-2a {
+    position: absolute;
+    top: 3rem;
+    right: -5rem;
+    width: 80%;
+}
+.staking-img-2b {
+    position: absolute;
+    top: 10.5rem;
+    right: 15rem;
+    width: 90%;
+    z-index: -1;
+}
+.staking-img-2c {
+    position: absolute;
+    top: 45rem;
+    right: 33rem;
+    width: 50%;
+}
+.policy-card-padding {
+    padding: 10rem 0;
+}
+.policy-card-img1 {
+    position: absolute;
+    top: 9rem;
+    left: -1rem;
+}
+.policy-card-img2 {
+    position: absolute;
+    top: 8rem;
+    left: 2rem;
+}
+.policy-card-img3 {
+    position: absolute;
+    top: 7rem;
+    right: 2rem;
+    width: 20%;
+    z-index: -1;
+}
+.convert-card-padding {
+    align-content: center;
+    justify-content: center;
+    padding-top: 20rem;
+}
+.convert-card-img1 {
+    position: absolute;
+    top: -1rem;
+    right: 5rem;
+}
+.convert-card-img2 {
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+}
+.convert-card-img3 {
+    position: absolute;
+    top: 5.5rem;
+    right: 12rem;
+    width: 15%;
+    z-index: -1;
+}
+
+
+.dev-bg {
+    background: #000e29;
+}
+.dev-padding {
+    margin: 15rem 0;
+}
+.dev-card-intro {
+    margin-right: 4rem;
+    padding: 9.4rem 0;
+}
+.dev-card-h {
+    font-family: New York;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 6rem;
+    margin: 0 0 1.6rem 0;
+}
+.dev-card-p {
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    color: #f5f6fa;
+    max-width: 58rem;
+}
+.dev-card-text {
+    width: 62rem;
+    height: 43.2rem;
+    background: #001540;
+    border: 1px solid #001540;
+    border-radius: .8rem;
+    padding: 2.4rem;
+}
+.dev-text {
+    font-family: Proxima;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+.inner-dev-card-h {
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    padding-top: 1rem;
+}
+.features-margin-bottom {
+    margin-bottom: 25rem;
+}
+.api {
+    margin-right: 13rem;
+}
+
+
+.bitpowr-position {
+    position: relative;
+    margin-bottom: 20rem;
+}
+.bitpowr {
+    position: absolute;
+    top: 22.6rem;
+}
+.bitpowr-box-size {
+    margin: 11.5rem 0 2.4rem;
+    padding: 0 14rem;
+}
+.bitpowr-h {
+    font-family: New York;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.6rem;
+    color: #000e29;
+}
+.bitpowr-p-box {
+    margin: 0 27.3rem;
+}
+.bitpowr-p {
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #647aa8;
+}
+.bitpowr-btn-container {
+    margin-top: 5.6rem;
+    padding: 0 auto;
+}
+.curves-and-coins {
+    margin-top: 18rem;
+    position: relative;
+}
+.bigellipse {
+    position: relative;
+    width: 105%;
+}
+.smallellipse {
+    position: absolute;
+    top: 11.2rem;
+    left: 11.5rem;
+    width: 80%;
+}
+.eth, .litecoin, .litecoin1, .litecoin2, .btc, .tether, .doge, .binance {
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0.4rem 1rem rgba(82, 133, 242, 0.1);
+    width: 7.2rem;
+    height: 7.2rem;
+    padding: 1.6rem 1.5rem;
+    border-radius: 50%;
+}
+.eth {
+    top: 42rem;
+    left: -1rem;
+}
+.litecoin {
+    top: 27rem;
+    left: 5rem;
+}
+.binance {
+    top: 6rem;
+    left: 26rem;
+}
+.btc {
+    top: -4rem;
+    left: 61rem;
+}
+.doge {
+    top: 6rem;
+    right: 29rem;
+}
+.tether {
+    top: 34rem;
+    right: 3rem;
+}
+.white-ellipse {
+    position: absolute;
+    top: 46rem;
+    right: -1rem;
+    width: 5%;
+}
+.litecoin1 {
+    top: 18rem;
+    left: 29rem;
+}
+.litecoin2 {
+    top: 18rem;
+    right: 31rem;
+}
+
+
+.stories-margin-bottom {
+    margin-bottom: 20rem;
+}
+.stories-h {
+    margin: 0 36.1rem 22.6rem;
+    color: #000e29;
+}
+.stories-card-container {
+    position: relative;
+    height: 49.7rem;
+    border-radius: 3.2rem;
+    background: #f5f6fa;
+}
+.stories-card-padding {
+    margin: 0 6.4rem;
+}
+.flex-23 {
+    flex: 0 1 23%;
+    height: 29rem;
+    width: 26rem;
+    border-radius: 2.4rem;
+    background: #fff;
+    box-shadow: 0 7rem 8rem -2.4rem rgba(82, 133, 242, 0.1);
+    margin-top: 4rem;
+    padding: 2.4rem;
+}
+.stories-card-img {
+    margin-right: 1.6rem;
+}
+.stories-card-h {
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #111827;
+}
+.stories-card-title {
+    font-family: Proxima;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #5285f2;
+}
+.stories-card-intro {
+    margin-bottom: 2.4rem;
+}
+.stories-card-p {
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: #647aa8;
+}
+.ro1 {
+    position: absolute;
+    top: -12.3rem;
+    left: 6.4rem;
+}
+.ro2 {
+    position: absolute;
+    top: -6.3rem;
+    left: 34.8rem;
+}
+.ro3 {
+    position: absolute;
+    top: -12.3rem;
+    left: 63.2rem;
+}
+.ro4 {
+    position: absolute;
+    top: -6.3rem;
+    left: 91.6rem;
+}
+.ro5 {
+    position: absolute;
+    top: 20.7rem;
+    left: 6.4rem;
+}
+.ro6 {
+    position: absolute;
+    top: 26.7rem;
+    left: 34.8rem;
+}
+.ro7 {
+    position: absolute;
+    top: 20.7rem;
+    left: 63.2rem;
+}
+.ro8 {
+    position: absolute;
+    top: 26.7rem;
+    left: 91.6rem;
+}
+
+
+.questions-h-padding {
+    margin-right: 4rem;
+    padding: 1.6rem 0;
+}
+.questions-h {
+    font-family: New York;
+    font-weight: 700;
+    font-size: 5.6rem;
+    line-height: 8rem;
+    color: #001540;
+}
+.faq {
+    border: 0;
+    background: 0;
+    padding: 0 0 4rem 0;
+}
+.upIcon, .answers {
+    display: none;
+}
+.answers {
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    max-width: 61.6rem;
+    color: #647aa8;
+}
+.questions {
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 4rem;
+    max-width: 61.6rem;
+    color: #203a6e;
+    margin: 0 4.3rem 1.6rem 0;
+}
+.questions-container {
+    border-bottom: 1px solid #d7e1f6;
+    width: 68rem;
+    margin-top: 4rem;
+}
+.upIcon, .downIcon {
+    color: #001540;
+    padding-top: .8rem;
+}
+.questions-container.active .answers {
+    display: block;
+}
+
+
+.subscribe-content-container {
+    position: relative;
+    background: #ecf2ff;
+    height: 40.7rem;
+    border-radius: 4rem;
+    padding-top: 1rem;
+    margin-bottom: 15.1rem;
+}
+.subscribe-h-container {
+    margin: 9rem 21.7rem 4rem;
+}
+.subscribe-h {
+    font-family: New York;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 6rem;
+    color: #001540;
+}
+.subscribe-btn-container {
+    margin: 0 30.1rem 10.1rem;
+}
+.subscribe-email-form {
+    width: 42.1rem;
+    height: 5.6rem;
+    background: #fff;
+    border-radius: .4rem;
+    padding: 1.6rem 0 1.6rem 1.6rem;
+    margin-right: 1.6rem;
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #647aa8;
+    border: 0;
+}
+
+
+.seemless-box-size {
+    margin: 0 22.6rem 1.6rem;
+}
+.seemless-p-box {
+    margin-bottom: 5.6rem;
+}
+.seemless-btn {
+    margin: 0 1.6rem 0 0;
+}
+
+
+.footer-logo {
+    flex: 0 1 30%;
+    padding: 12rem 0 14.6rem;
+    margin-right: 13.1rem;
+}
+.footer-nav {
+    flex: 0 1 65%;
+}
+.logo {
+    margin-bottom: 4rem;
+}
+.footer-logo-h, .footer-logo-p {
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #d9dbe1;
+    margin: 0 0 .8rem 0;
+}
+.footer-logo-p {
+    margin: 0;
+}
+.company, .support, .social-links {
+    flex: 0 1 22%;
+}
+.company, .support {
+    padding: 12rem 0;
+    margin-right: 13.1rem;
+}
+.social-links {
+    padding: 12rem 0 24.8rem;
+    margin-right: .2rem;
+}
+.footer-nav-h {
+    font-family: New York;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 2.4rem;
+}
+.footer-nav-list {
+    font-family: Proxima;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #d9dbe1;
+    margin-bottom: 1rem;
+}
+.fb, .ig, .twitter {
+    padding-right: 1.6rem;
+}
+.showAnswer {
+    position: absolute;
+    right: 4rem;
+    top: 2rem;
+}
+
+
+
+
+
+
+
+@media (max-width: 1440px) {
+    .features-list-p {
+        padding: 0 0 0 3rem;
+    }
+    .features-list-h {
+        padding: 1rem 0 0 0;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .company, .support {
+        margin-right: 8rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #header {
+        display: none;
+    }
+    #mob-header {
+        display: flex;
+        padding: 2rem 10rem;
+    }
+    .nav-logo-section {
+        flex: 1 1 10%;
+    }
+    .navIcon {
+        display: block;
+    }
+    .closeIcon {
+        display: none;
+    }
+    .hamburger {
+        flex: 1 1 10%;
+        display: block;
+        margin-right: 1.5rem;
+        max-width: 2rem;
+        max-height: 3rem;
+        border: 0;
+        background: 0;
+    }
+    .mob-nav {
+        position: absolute;
+        padding-top: 3rem;
+        opacity: 0;
+        background: #d1cdcd;
+        transform: translateX(-100%);
+        transition: all .9s ease-in-out;
+    }
+    .nav-list-item {
+        margin: 2.4rem;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+    }
+    .nav-list-link {
+        display: inline-block;
+        padding: 1.2rem 0;
+        margin-left: 2.2rem;
+    }
+    .nav-list-btn {
+        width: 22.1rem;
+        margin: 2rem 1.6rem 2rem 0;
+    }
+    .navMenu {
+        left: 0;
+        opacity: 1;
+        z-index: 100;
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .stories-margin-bottom {
+        margin-bottom: 35rem;
+    }
+    .footer-logo {
+        flex: 0 1 20%;
+    }
+    .company, .support {
+        margin-right: 2rem;
+    }
+    .company, .support, .social-links {
+        flex: 0 1 20%;
+    }
+    .hamburger i {
+        font-size: 2em;
+    }
+    .nav-logo-img {
+        width: 50%;
+    }
+    .stories-card-img {
+        width: 30%;
+    }
+    .faq i {
+        font-size: 1em;
+    }
+}

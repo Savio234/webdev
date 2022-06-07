@@ -9,68 +9,39 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Extended Classes</title>
+    <title>Interval</title>
 </head>
 <body>
     
 
-    <h1>Your Input was: </h1>
-    <h3 id="inputData">_______</h3>
-        
+    <h1 class="interval">Intervals</h1>
+
+    <h2 class="end"></h2>
+
+    
+    
 
 
     <script>
-
-        // Extending Classes
-
-        class animal {
-            constructor(species, weight, height) {
-                this.species = String(species)
-                this.weight = Number(weight)
-                this.height = Number(height)
-            }
-
-            getInfo() {
-                console.log(this.species + " weighs " + this.weight + "lbs and is " + this.height + "m tall.")
-                let animalInfo = document.getElementById('inputData')
-                animalInfo.innerText = (this.species + " weighs " + this.weight + "lbs and is " + this.height + "m tall.")
-            }
-        }
-        const tiger = new animal("Tiger", 260, 1.53)
-        // tiger.getInfo()
-
-        class dog extends animal {
-            constructor(species, weight, height) {
-                super(species, weight, height)
-                this.color = "dark brown"
-            }
-
-            sleep() {
-                console.log(this.species + " sleeps for 10 hours a day")
-                return this
-            }
-            exercise() {
-                console.log("As part of his training, " + this.species + " runs for 3 hours a day")
-            }
-        }
-        const max = new dog("Max", 210, 1.57)
-        max.sleep().exercise()
-        // console.log(max)
-
-        class lion extends animal {
-
-        }
-        const leo = new lion("Mufasa", 320, 1.59)
-        console.log(leo)
-
         
-        
+
+    // Intervals
         
         
 
+        let logRecorder = setInterval(function() {
+            console.log("I'm still running!")
+            var text = document.querySelector(".interval")
+            text.innerText = "I'm still running!"
+        },500)
 
+        setTimeout(function() {
+            clearInterval(logRecorder)
+            var stop = document.querySelector(".end")
+            stop.innerText = "I've stopped!"
+        }, 5500)
 
-
+        
     </script>       
 
             

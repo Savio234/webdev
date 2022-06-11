@@ -9,51 +9,34 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Destructuring</title>
+    <title>Timeouts</title>
 </head>
 <body>
     
 
-    <h2 class="dArrays">Destructuring Arrays</h2>
+    <h1 class="timeout">Timeouts</h1>
+
+    
     
 
 
     <script>
         
 
-        // Destructuring Arrays
-
-    var fullName = prompt("Enter your fullname: ");
+    // Timeouts
         
-    let [firstName, lastName] = fullName.split(" ");
+        console.log("First console log before the timeout")
 
-    const name = document.querySelector(".dArrays");
-    name.innerText = fullName;
-    console.log(firstName, " is the first name");
-    console.log(lastName, " is the last name")
+        setTimeout(function() {
 
+            console.log("Time out!!")
+            let body = document.querySelector("body")
+            body.style.backgroundColor = "#00062e"
+            body.style.color = "white"
+            body.style.fontSize = "6rem"
 
-    var arr = ["Dom", "Gerald", "Arnold", "Ik", "Aise", "Revvie", "Robb"];
-    
-    let [dom, gerald, arnold, ...rest] = arr
-    console.log(rest);
-
-
-
-    const person = {
-        "name": "Dominic",
-        "age": "24",
-        "anime": "Naruto",
-        "dog": "max",
-        "color": "black",
-        "height": "6'3",
-        "food": "all",
-    }
-
-    let {name:myName, age, ...others} = person;
-    console.log(`My name is ${myName}`)
-    console.log(`Fav anime is ${person.anime}`)
-    console.log(others)
+        }, 3000)
+        console.log("After the timeout")
 
         
     </script>       

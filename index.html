@@ -9,34 +9,56 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Timeouts</title>
+    <title>Extended Classes</title>
 </head>
 <body>
     
 
-    <h1 class="timeout">Timeouts</h1>
+    <h1 class="template">Template Literals</h1>
 
-    
+    <h2 class="object">Object Literals</h2>
     
 
 
     <script>
         
 
-    // Timeouts
+    //    Template Literals
+
+
+        const name = "Dominic"
+        const firstName = "Amara"
+        let literal = document.querySelector(".template")
+
+        literal.innerText = (`Hi, my name is ${name}. ${firstName} happens to be my first name though.`)
+        console.log(literal.innerText)
+
+
+
+    //  Object Literals
+
         
-        console.log("First console log before the timeout")
+        const person = {
 
-        setTimeout(function() {
+            "name": "Dominic",
+            "age": "24",
+            "language": "English, Igbo and French-ish",
 
-            console.log("Time out!!")
-            let body = document.querySelector("body")
-            body.style.backgroundColor = "#00062e"
-            body.style.color = "white"
-            body.style.fontSize = "6rem"
+            // "speak": function speak() {}
+            // Object literals enable us to use the code below which is shorter and better 
+            // Because the 'key' and the 'value' of the function are the exact same thing
 
-        }, 3000)
-        console.log("After the timeout")
+            speak() {
+                let obj = document.querySelector(".object")
+                obj.innerText = (`I speak different languages: ${person.language} `)
+                console.log(`I speak English`)
+            }
+        }
+        
+        console.log(person.name)
+        person.speak()
+        
+
 
         
     </script>       

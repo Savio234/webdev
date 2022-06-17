@@ -4,60 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <!-- <meta http-equiv="refresh" content="10"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Extended Classes</title>
+    <title>Arrow Function</title>
 </head>
 <body>
     
 
-    <h1 class="template">Template Literals</h1>
-
-    <h2 class="object">Object Literals</h2>
+    <h2 class="arrow">Arrow</h2>
     
 
 
     <script>
         
 
-    //    Template Literals
-
-
-        const name = "Dominic"
-        const firstName = "Amara"
-        let literal = document.querySelector(".template")
-
-        literal.innerText = (`Hi, my name is ${name}. ${firstName} happens to be my first name though.`)
-        console.log(literal.innerText)
-
-
-
-    //  Object Literals
-
+        // using arrow funtions to represent functions
         
-        const person = {
 
-            "name": "Dominic",
-            "age": "24",
-            "language": "English, Igbo and French-ish",
-
-            // "speak": function speak() {}
-            // Object literals enable us to use the code below which is shorter and better 
-            // Because the 'key' and the 'value' of the function are the exact same thing
-
-            speak() {
-                let obj = document.querySelector(".object")
-                obj.innerText = (`I speak different languages: ${person.language} `)
-                console.log(`I speak English`)
-            }
+        intro = (name, age, state) => {
+            return `Hi, I'm ${name}. I am ${age} years old and I reside in ${state}`
         }
+        const itn = intro("Dominic", "24", "Lagos")
+        console.log(itn)
+
+
+        const arr = ["JavaScript", "Python", "C++", "C", "Ruby", "PHP"]
+
+        arr.forEach(language => {
+            console.log(language)
+        })
+        setTimeout(() => {
+            console.log("Timeouts using arrow functions")
+            let ar = document.querySelector(".arrow")
+            ar.innerText = "This took 5 seconds to appear"
+        }, 5000)
+
         
-        console.log(person.name)
-        person.speak()
-        
+    
 
 
         

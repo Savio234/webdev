@@ -10,49 +10,71 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Arrow Function</title>
+    <title>Final Project</title>
 </head>
 <body>
     
 
-    <h2 class="arrow">Arrow</h2>
+    <h1>Final Project</h1>
+
+    <ol>
+
+        <li>Create a title</li>
+        <li>Select the title using javascript</li>
+        <li>Split the title characters</li>
+        <li>Rejoin each letter with a class</li>
+        <li>Add an event listener to each one</li>
+        <li>On mouse over, the letters should animate using css</li>
+
+    </ol>
     
 
 
     <script>
         
 
-        // using arrow funtions to represent functions
-        
+        const title = document.querySelector("h1")
+        const character = title.innerText.split('')
 
-        intro = (name, age, state) => {
-            return `Hi, I'm ${name}. I am ${age} years old and I reside in ${state}`
-        }
-        const itn = intro("Dominic", "24", "Lagos")
-        console.log(itn)
+        // Next we create an empty variable
 
+        let rejoin = ""
 
-        const arr = ["JavaScript", "Python", "C++", "C", "Ruby", "PHP"]
-
-        arr.forEach(language => {
-            console.log(language)
+        character.forEach(letter => {
+            // We attach classes to each letter excepting the spaces
+            let classes = ""
+            if (letter !== " ") {
+                classes = "letter js-letter"
+            }
+            // Classes are attached and stored in the empty variable created
+            rejoin = rejoin + `<span class="${classes}">${letter}</span>`
         })
+        title.innerHTML = rejoin
+
+
+        //  Event listeners are attached for each character or better still each letter.
+        //  Characters also include spaces and they are included here
+        const jsLetter = document.querySelectorAll(".js-letter")
+        jsLetter.forEach(alphabet => {
+            alphabet.addEventListener("mouseover", function(over){
+                this.classList.add("active")
+            })
+            alphabet.addEventListener("mouseout", function(out){
+                this.classList.remove("active")
+            })
+        })
+
+
         setTimeout(() => {
             console.log("Timeouts using arrow functions")
-            let ar = document.querySelector(".arrow")
-            ar.innerText = "This took 5 seconds to appear"
-        }, 5000)
-
-        
+            let list = document.querySelector("ol")
+            list.innerText = "Now hover over the text above..."
+        }, 2000)
     
 
 
         
     </script>       
-
-            
-
-
     
         
 

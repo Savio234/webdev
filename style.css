@@ -1,44 +1,15 @@
 html {
-    font-size: calc(100vw/1499 * 10);
+    font-size: calc(100vw/1440 * 10);
 }
-@media screen and (max-width: 1023) {
-    html {
-        font-size: calc(100vw/1023 * 10);
-    }
-}
-@media screen and (max-width: 650) {
-    html {
-        font-size: calc(100vw/650 * 10);
-    }
-}
-@media screen and (max-width: 485) {
-    html {
-        font-size: calc(100vw/485 * 10);
-    }
-}
-
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: white;
-    height: 100%;
-    font-family: Alegreya,"Palatino Linotype","Book Antiqua",Palatino,Georgia,"Times New Roman", serif;
-    text-align: center;
+    font-family: sans-serif;
 }
 
-.letter {
-    display: inline-block;
-    font-size: 15rem;
-    color: #999;
-    transition: all 300ms ease-in-out;
-}
-.letter.active {
-    transform: scale(1.5) rotate(30deg);
-    background: linear-gradient(92.47deg, #00B3FC 1.25%, #FFEFA5 89.64%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-ol {
-    font-size: 5rem;
+* {
+    box-sizing: border-box;
+    font-size: 3rem;
+    line-height: 4.5rem;
 }

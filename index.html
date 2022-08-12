@@ -7,74 +7,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Extended Classes</title>
+    <title>Numbers</title>
 </head>
 <body>
     
 
-    <h1 class="template">Template Literals</h1>
+    <h1 class="template"></h1>
 
-    <h2 class="object">Object Literals</h2>
+    <h2 class="object"></h2>
     
-    <h2 class="totalInfo">Total</h2>
+    <h2 class="totalInfo"></h2>
 
     <p class="list"></p>
 
     <script>
         
 
-    //    Template Literals
+    let myNumber = 2;
+    let ans = ''
+    while (myNumber != Infinity) {
+        myNumber = myNumber * myNumber;
+        ans = ans + myNumber + "<br>"
+        document.querySelector(".list").innerHTML = ans
+    }
 
+    let num = 985.9398;
+    document.querySelector(".template").innerText = num.toExponential(3);
+    // returns the number as exponential power 2 but decimal places are determined by the specified parameter
 
-        const name = "Dominic"
-        const firstName = "Amara"
-        let literal = document.querySelector(".template")
+    document.querySelector(".object").innerText = num.toFixed(5);
+    // specifies the number of decimal places
 
-        literal.innerText = (`Hi, my name is ${name}. ${firstName} happens to be my first name though.`)
-        console.log(literal.innerText)
+    const precisionNum = num.toPrecision(4);
+    console.log(precisionNum)
 
+    document.querySelector(".list").innerHTML = Number(true) + "<br>" + 
+    Number(false) + "<br>" + 
+    Number("10") + "<br>" + 
+    Number("100 ") + "<br>" + 
+    Number(" 124") + "<br>" + 
+    Number("10, 33") + "<br>" + 
+    Number("Jeff");
 
-        const price = 10;
-        const vat = 0.25;
-        let total = `Total: ${(price * (1 + vat)).toFixed(2)}`;
-        console.log(total)
-        document.querySelector(".totalInfo").innerText = total;
-
-
-        const header = "Templates Literals";
-        const tags = ["template literals", "javascript", "es6"];
-        let html = `<h2>${header}</h2><ul>`;
-        for (const x of tags) {
-            html += `<li>${x}</li>`;
-        }
-
-        html += `</ul>`;
-        document.querySelector(".list").innerHTML = html
-
-
-
-    //  Object Literals
-
+    document.querySelector(".totalInfo").innerHTML = parseInt("-10") + "<br>" +
+    parseInt("-10.33") + "<br>" +
+    parseInt("10") + "<br>" +
+    parseFloat("10.33") + "<br>" +
+    parseInt("10 6 30") + "<br>" +  
+    parseFloat("10 solid years") + "<br>" +  
+    parseInt("years 10");
         
-        const person = {
+    const maxnum = Number.MAX_VALUE;
+    console.log(maxnum)
 
-            "name": "Dominic",
-            "age": "24",
-            "language": "English, Igbo and French-ish",
+    const minnum = Number.MIN_VALUE;
+    console.log(minnum)
 
-            // "speak": function speak() {}
-            // Object literals enable us to use the code below which is shorter and better 
-            // Because the 'key' and the 'value' of the function are the exact same thing
+    let Y = -1/0;
+    console.log(`${Y} is referred to as -ve infinity`)
 
-            speak() {
-                let obj = document.querySelector(".object")
-                obj.innerText = (`I speak different languages: ${person.language} `)
-                console.log(`I speak English`)
-            }
-        }
-        
-        console.log(person.name)
-        person.speak()
+    let Z = 1/0;
+    console.log(`${Z} is referred to as +ve infinity`)
+
+    const maxSafeInt = Number.MAX_SAFE_INTEGER;
+    console.log(maxSafeInt)
+
+    const minSafeInt = Number.MIN_SAFE_INTEGER;
+    console.log(minSafeInt)
         
 
 

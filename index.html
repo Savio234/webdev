@@ -4,103 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>String Manipulation</title>
+    <title>Extended Classes</title>
 </head>
 <body>
     
 
-    <div id="sentence" style="border: 2px solid black; margin-bottom: 20px; padding-bottom: 20px;">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ex, inventore perferendis est blanditiis impedit eum delectus magni quod fuga, nesciunt sit quam deleniti laboriosam.
-    </div>
+    <h1 class="template">Template Literals</h1>
 
-    <div id="sentences">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed animi aut sequi unde dolorum atque saepe eveniet, eos numquam possimus laudantium itaque cumque, expedita eius.
-    </div>
+    <h2 class="object">Object Literals</h2>
+    
+    <h2 class="totalInfo">Total</h2>
 
-
-    <p class="locate"></p>
-    <div class="lastIndex"></div>
-    <p class="search"></p>
-    <div class="textmatch"></div>
-
-
+    <p class="list"></p>
 
     <script>
+        
+
+    //    Template Literals
+
+
+        const name = "Dominic"
+        const firstName = "Amara"
+        let literal = document.querySelector(".template")
+
+        literal.innerText = (`Hi, my name is ${name}. ${firstName} happens to be my first name though.`)
+        console.log(literal.innerText)
+
+
+        const price = 10;
+        const vat = 0.25;
+        let total = `Total: ${(price * (1 + vat)).toFixed(2)}`;
+        console.log(total)
+        document.querySelector(".totalInfo").innerText = total;
+
+
+        const header = "Templates Literals";
+        const tags = ["template literals", "javascript", "es6"];
+        let html = `<h2>${header}</h2><ul>`;
+        for (const x of tags) {
+            html += `<li>${x}</li>`;
+        }
+
+        html += `</ul>`;
+        document.querySelector(".list").innerHTML = html
+
+
+
+    //  Object Literals
 
         
-        // String Manipulation
+        const person = {
+
+            "name": "Dominic",
+            "age": "24",
+            "language": "English, Igbo and French-ish",
+
+            // "speak": function speak() {}
+            // Object literals enable us to use the code below which is shorter and better 
+            // Because the 'key' and the 'value' of the function are the exact same thing
+
+            speak() {
+                let obj = document.querySelector(".object")
+                obj.innerText = (`I speak different languages: ${person.language} `)
+                console.log(`I speak English`)
+            }
+        }
+        
+        console.log(person.name)
+        person.speak()
+        
+
 
         
-        var sent = document.getElementById(sentence);
-        var sentNode = sentence.innerText;
-        // Assigning the text inside(inner text) the div, with id "sentence",  to a variable named "sentNode"  
-        console.log("Sentence: ", sentNode)
+    </script>       
+
+            
 
 
-        // Changing the case of the string to either lowerCase or upperCase
-        var upper = sentNode.toUpperCase();
-        console.log(upper)
-        var lower = sentNode.toLowerCase();
-        console.log(lower)
+    
+        
 
-
-        // Selecting specific number of characters to be displayed by removing some
-        var firstEleven = sentNode.substr(11);
-        console.log(firstEleven)
-        var between = sentNode.substr(11, 42);
-        console.log("11 to 42 gives:", between)
-
-        // Spliting, joining and slicing the words and letters
-        var wordsSplit = sentNode.split(" ");
-        console.log("All words: ", wordsSplit)
-        var lettersSplit = sentNode.split("");
-        console.log("Each letter: ", lettersSplit)
-        // Changing the innerText to the text in the "bracket" varible
-        var bracket = "(" + wordsSplit.join(")(") + ")";
-        console.log(bracket)
-        sentence.innerText = bracket
-
-        // Selecting specific number of words to be displayed by removing some
-        var wordsSlice = wordsSplit.slice(5);
-        console.log(wordsSlice)
-        // Selecting and concatenating
-        var words = wordsSplit.slice(5, 10);
-        var newWord = words.join(" ");
-        console.log(newWord)
-        sentences.innerText = newWord
-
-
-        let str = "Please locate where 'locate' occurs!";
-        let text = "The rain in SPAIN stays mainly in the plains around there";
-
-        const strLocate = str.indexOf('locate');
-        const lastIndex = str.lastIndexOf('locate');
-        const strSearch = str.search('locate');
-        const textMatch = text.match(/ain/gi);
-        const textInclude = text.includes("Peter"); 
-        const textStart = text.startsWith('the');
-        const strEnd = str.endsWith('!');
-
-        const strLocateStart = str.indexOf('locate', 9)
-        const lastIndexStart = str.lastIndexOf('locate', 15);
-        // The indexOf() and lastIndexOf() methods accepts a second parameter as starting point
-
-        console.log(strLocateStart)
-        console.log(lastIndexStart)
-        console.log(textInclude)
-        console.log(textStart)
-        console.log(strEnd)
-
-        document.querySelector(".locate").innerText = strLocate;
-        document.querySelector(".lastIndex").innerText = lastIndex;
-        document.querySelector('.search').innerText = strSearch;
-        document.querySelector('.textmatch').innerText = textMatch;
-
-
-    </script>
+    
 
 
 </body>

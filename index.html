@@ -4,89 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Numbers</title>
+    <title>Arrays and Arithmetic</title>
 </head>
 <body>
     
 
-    <h1 class="template"></h1>
+    <!-- <h1>Your Input was: </h1>
+    <h3 id="customInput">_______</h3> -->
 
-    <h2 class="object"></h2>
-    
-    <h2 class="totalInfo"></h2>
 
-    <p class="list"></p>
+    <div class="fruits"></div>
+
+    <div class="mixture"></div>
+
+
 
     <script>
-        
 
-    let myNumber = 2;
-    let ans = ''
-    while (myNumber != Infinity) {
-        myNumber = myNumber * myNumber;
-        ans = ans + myNumber + "<br>"
-        document.querySelector(".list").innerHTML = ans
-    }
+        // Simple arithmetic
 
-    let num = 985.9398;
-    document.querySelector(".template").innerText = num.toExponential(3);
-    // returns the number as exponential power 2 but decimal places are determined by the specified parameter
+        var num1 = 100
+        var num2 = 33
+        console.log(num1, num2)
 
-    document.querySelector(".object").innerText = num.toFixed(5);
-    // specifies the number of decimal places
+        var add = num1 + num2
+        console.log("Add is = ", add)
 
-    const precisionNum = num.toPrecision(4);
-    console.log(precisionNum)
+        var minus = num1 - num2
+        console.log("Minus is = ", minus)
 
-    document.querySelector(".list").innerHTML = Number(true) + "<br>" + 
-    Number(false) + "<br>" + 
-    Number("10") + "<br>" + 
-    Number("100 ") + "<br>" + 
-    Number(" 124") + "<br>" + 
-    Number("10, 33") + "<br>" + 
-    Number("Jeff");
+        var product = num1 * num2
+        console.log("Product is = ", product)
 
-    document.querySelector(".totalInfo").innerHTML = parseInt("-10") + "<br>" +
-    parseInt("-10.33") + "<br>" +
-    parseInt("10") + "<br>" +
-    parseFloat("10.33") + "<br>" +
-    parseInt("10 6 30") + "<br>" +  
-    parseFloat("10 solid years") + "<br>" +  
-    parseInt("years 10");
-        
-    const maxnum = Number.MAX_VALUE;
-    console.log(maxnum)
+        var div = num1 / num2
+        console.log("Division is = ", div)
 
-    const minnum = Number.MIN_VALUE;
-    console.log(minnum)
+        var exp = num1 ** num2
+        console.log("Exponential is = ", exp)
 
-    let Y = -1/0;
-    console.log(`${Y} is referred to as -ve infinity`)
-
-    let Z = 1/0;
-    console.log(`${Z} is referred to as +ve infinity`)
-
-    const maxSafeInt = Number.MAX_SAFE_INTEGER;
-    console.log(maxSafeInt)
-
-    const minSafeInt = Number.MIN_SAFE_INTEGER;
-    console.log(minSafeInt)
-        
+        var mod = num1 % num2
+        console.log("Module is = ", mod)
 
 
-        
-    </script>       
+        // Arrays use square brackets
 
-            
+        var arr = ["dominic", 30, true, 4.5, "nano", "gerald", "today", false]
+        var arr1 = ["savio", 24, true, 1997, "javascript", "html", "September", false]
+        var arr2 = ["peter", 28, true, 2025, "revvie", "godiva", "future", false]
+        var list = [arr, arr1, arr2]
+        console.log(list)
+        console.log(list.length)
+        console.log(arr)
+        console.log(arr[3])
+        console.log(arr.length)
+
+        var arrPush = arr.push("Jerry")
+        console.log(arrPush)
+
+        var sliceItems = arr1.slice(0, 3)
+        console.log(sliceItems)
+
+        var listPop = list.pop()
+        console.log(listPop)
 
 
-    
-        
+        // Conditioning a variable type to another variable type
+        var arrSplit = String(arr2)
+        console.log(arrSplit)
 
-    
+
+        var str = String(arr)
+        console.log(str)
+
+        var num = Number(arr)
+        console.log(num)
+
+
+        // Looping through an array
+        const fruits = ["Banana", "Orange", "Apple", "Mango", "Lemon"];
+        let listOfFruits = "<ul>";
+        fruits.forEach(fruitsList);
+        listOfFruits += "</ul>"
+        document.querySelector(".fruits").innerHTML = listOfFruits;
+
+        function fruitsList(value) {
+            listOfFruits += "<li>" + value + "</li>";
+        }
+
+        // converts arrays to strings
+        let list2str = fruits.toString();
+        console.log(list2str)
+
+        // removes the last item in the array
+        let food = fruits.pop();
+        console.log(food)
+
+        // adds a new element to the end
+        let freshFruits = fruits.push("Grape")
+        console.log(freshFruits, fruits)
+
+        // The shift() method removes the first array element and "shifts" all other elements to a lower index.
+        let fruitShift = fruits.shift()
+        console.log(fruitShift)
+
+        // The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements
+        let fruitUnshift = fruits.unshift("Pear")
+        console.log(fruitUnshift, fruits)
+
+        // The concat() method creates a new array by merging (concatenating) existing arrays
+        const salad = ["milk", "sugar", "groundnut"];
+        const fruitsalad = fruits.concat(salad)
+        document.querySelector(".mixture").innerText = fruitsalad
+
+        // Merging three arrays
+        const lunch1 = ["Friedrice", "Jollofrice"];
+        const lunch2 = ["Moimoi", "salad"];
+        const lunch3 = ["turkey", "drink"];
+        fullcourse = lunch1.concat(lunch2, lunch3);
+        console.log(fullcourse)
+
+
+    </script>
 
 
 </body>

@@ -4,48 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <!-- <meta http-equiv="refresh" content="10"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Arrow Function</title>
+    <title>Interval</title>
 </head>
 <body>
     
 
-    <h2 class="arrow">Arrow</h2>
+    <h1 class="interval">Intervals</h1>
+
+    <h2 class="end"></h2>
+
+    
     
 
 
     <script>
         
 
-        // using arrow funtions to represent functions
+    // Intervals
+        
         
 
-        intro = (name, age, state) => {
-            return `Hi, I'm ${name}. I am ${age} years old and I reside in ${state}`
-        }
-        const itn = intro("Dominic", "24", "Lagos")
-        console.log(itn)
+        let logRecorder = setInterval(function() {
+            console.log("I'm still running!")
+            var text = document.querySelector(".interval")
+            text.innerText = "I'm still running!"
+        },500)
 
-
-        const arr = ["JavaScript", "Python", "C++", "C", "Ruby", "PHP"]
-
-        arr.forEach(language => {
-            console.log(language)
-        })
-        setTimeout(() => {
-            console.log("Timeouts using arrow functions")
-            let ar = document.querySelector(".arrow")
-            ar.innerText = "This took 5 seconds to appear"
-        }, 5000)
-
-        
-    
-
+        setTimeout(function() {
+            clearInterval(logRecorder)
+            var stop = document.querySelector(".end")
+            stop.innerText = "I've stopped!"
+        }, 5500)
 
         
     </script>       

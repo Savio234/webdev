@@ -10,45 +10,40 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>APIs & AJAX requests</title>
+    <title>Arrow Function</title>
 </head>
 <body>
     
 
-    <h2 class="requests">Fetch</h2>
+    <h2 class="arrow">Arrow</h2>
     
 
 
     <script>
         
 
-        // APIs and AJAX requests
-        // APIS = Application Programming Interfaces
-        // AJAX = Asychronous JavaScript and JSON
+        // using arrow funtions to represent functions
+        
+
+        intro = (name, age, state) => {
+            return `Hi, I'm ${name}. I am ${age} years old and I reside in ${state}`
+        }
+        const itn = intro("Dominic", "24", "Lagos")
+        console.log(itn)
 
 
-        fetch("https://swapi.dev/api/people/1/")
-            // then() method returns a 'promise'. A promise object represents the eventual completion (or failure) of an asynchronous operation.
-            .then(function(response) {
-                return response.json()
-                // '.json' forces the fetch request stored in variable 'response' to come as json file
-            })
-            .then(function(res) {
-                luke = res
-                console.log(luke)
-                let [movie1, movie2, movie3, ...movies] = luke.films
-                console.log(movie2)
-                luke.films.forEach(function(link, index) {
-                    console.log(index, link)
-                })
+        const arr = ["JavaScript", "Python", "C++", "C", "Ruby", "PHP"]
 
-                const [star1, star2] = luke.starships
-                var star = star1
-                console.log(star)
-                const movielink = "<a href = '" + star1 + "'>" + star1 + "</a>"
-                let req = document.querySelector(".requests")
-                req.innerHTML = movielink
-            })
+        arr.forEach(language => {
+            console.log(language)
+        })
+        setTimeout(() => {
+            console.log("Timeouts using arrow functions")
+            let ar = document.querySelector(".arrow")
+            ar.innerText = "This took 5 seconds to appear"
+        }, 5000)
+
+        
     
 
 

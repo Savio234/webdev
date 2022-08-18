@@ -4,132 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <!-- <meta http-equiv="refresh" content="10"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Arrays and Arithmetic</title>
+    <title>APIs & AJAX requests</title>
 </head>
 <body>
     
 
-    <!-- <h1>Your Input was: </h1>
-    <h3 id="customInput">_______</h3> -->
-
-
-    <div class="fruits"></div>
-
-    <div class="mixture"></div>
-
+    <h2 class="requests">Fetch</h2>
+    
 
 
     <script>
+        
 
-        // Simple arithmetic
-
-        var num1 = 100
-        var num2 = 33
-        console.log(num1, num2)
-
-        var add = num1 + num2
-        console.log("Add is = ", add)
-
-        var minus = num1 - num2
-        console.log("Minus is = ", minus)
-
-        var product = num1 * num2
-        console.log("Product is = ", product)
-
-        var div = num1 / num2
-        console.log("Division is = ", div)
-
-        var exp = num1 ** num2
-        console.log("Exponential is = ", exp)
-
-        var mod = num1 % num2
-        console.log("Module is = ", mod)
+        // APIs and AJAX requests
+        // APIS = Application Programming Interfaces
+        // AJAX = Asychronous JavaScript and JSON
 
 
-        // Arrays use square brackets
+        fetch("https://swapi.dev/api/people/1/")
+            // then() method returns a 'promise'. A promise object represents the eventual completion (or failure) of an asynchronous operation.
+            .then(function(response) {
+                return response.json()
+                // '.json' forces the fetch request stored in variable 'response' to come as json file
+            })
+            .then(function(res) {
+                luke = res
+                console.log(luke)
+                let [movie1, movie2, movie3, ...movies] = luke.films
+                console.log(movie2)
+                luke.films.forEach(function(link, index) {
+                    console.log(index, link)
+                })
 
-        var arr = ["dominic", 30, true, 4.5, "nano", "gerald", "today", false]
-        var arr1 = ["savio", 24, true, 1997, "javascript", "html", "September", false]
-        var arr2 = ["peter", 28, true, 2025, "revvie", "godiva", "future", false]
-        var list = [arr, arr1, arr2]
-        console.log(list)
-        console.log(list.length)
-        console.log(arr)
-        console.log(arr[3])
-        console.log(arr.length)
-
-        var arrPush = arr.push("Jerry")
-        console.log(arrPush)
-
-        var sliceItems = arr1.slice(0, 3)
-        console.log(sliceItems)
-
-        var listPop = list.pop()
-        console.log(listPop)
-
-
-        // Conditioning a variable type to another variable type
-        var arrSplit = String(arr2)
-        console.log(arrSplit)
+                const [star1, star2] = luke.starships
+                var star = star1
+                console.log(star)
+                const movielink = "<a href = '" + star1 + "'>" + star1 + "</a>"
+                let req = document.querySelector(".requests")
+                req.innerHTML = movielink
+            })
+    
 
 
-        var str = String(arr)
-        console.log(str)
+        
+    </script>       
 
-        var num = Number(arr)
-        console.log(num)
-
-
-        // Looping through an array
-        const fruits = ["Banana", "Orange", "Apple", "Mango", "Lemon"];
-        let listOfFruits = "<ul>";
-        fruits.forEach(fruitsList);
-        listOfFruits += "</ul>"
-        document.querySelector(".fruits").innerHTML = listOfFruits;
-
-        function fruitsList(value) {
-            listOfFruits += "<li>" + value + "</li>";
-        }
-
-        // converts arrays to strings
-        let list2str = fruits.toString();
-        console.log(list2str)
-
-        // removes the last item in the array
-        let food = fruits.pop();
-        console.log(food)
-
-        // adds a new element to the end
-        let freshFruits = fruits.push("Grape")
-        console.log(freshFruits, fruits)
-
-        // The shift() method removes the first array element and "shifts" all other elements to a lower index.
-        let fruitShift = fruits.shift()
-        console.log(fruitShift)
-
-        // The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements
-        let fruitUnshift = fruits.unshift("Pear")
-        console.log(fruitUnshift, fruits)
-
-        // The concat() method creates a new array by merging (concatenating) existing arrays
-        const salad = ["milk", "sugar", "groundnut"];
-        const fruitsalad = fruits.concat(salad)
-        document.querySelector(".mixture").innerText = fruitsalad
-
-        // Merging three arrays
-        const lunch1 = ["Friedrice", "Jollofrice"];
-        const lunch2 = ["Moimoi", "salad"];
-        const lunch3 = ["turkey", "drink"];
-        fullcourse = lunch1.concat(lunch2, lunch3);
-        console.log(fullcourse)
+            
 
 
-    </script>
+    
+        
+
+    
 
 
 </body>

@@ -4,44 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="preload" as="style"">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../../../HTML/img/javascript.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Interval</title>
+    <title>Objects</title>
 </head>
 <body>
     
 
-    <h1 class="interval">Intervals</h1>
-
-    <h2 class="end"></h2>
-
-    
-    
+    <h3 id="answer"></h3>
+    <h3 id="text"></h3>
+        
 
 
     <script>
-        
 
-    // Intervals
-        
-        
+        // Introduction to Objects
 
-        let logRecorder = setInterval(function() {
-            console.log("I'm still running!")
-            var text = document.querySelector(".interval")
-            text.innerText = "I'm still running!"
-        },500)
+        person = {
+            "name": "Dominic",
+            "animal": "Dog",
+            "age": "24",
+            "occupation": "Aspiring dev"
 
-        setTimeout(function() {
-            clearInterval(logRecorder)
-            var stop = document.querySelector(".end")
-            stop.innerText = "I've stopped!"
-        }, 5500)
+        }
+        console.log(typeof(person))
 
+        person['shoes'] = '4 pairs'
+        console.log(person)
+        let personShoe = document.getElementById('answer')
+        personShoe.innerText = ("The object 'person' contains the following items " + person.name + " ," + person.animal + " ," + person.age + " ," + person.occupation + ".")
+
+        person["weight"] = function(mass) {
+            console.log(person.name + " weighs 94kg")
+        }
         
+        console.log(person)
+
+        person.fullName = function() {
+            console.log(this.name + " Ezeifejafor Amarachukwu SP")
+        }
+        console.log(person)
+
+            
+        
+        var things = {
+            'name': 'Dominic',
+            'sound': function() {
+                console.log("talk")
+            },
+            'age': "24",
+            'cars': '2'
+        }
+        console.log(things.name)
+        let thingsList = document.getElementById('text')
+        thingsList.innerText = ("The object 'things' contains the following " + things.name + " ," + things.sound + " ," + things.age + " ," + things.cars + ".")
+        
+        let myObject = {
+            a: 10
+        };
+
+        let copyOfMyObject = myObject;
+        copyOfMyObject.b = false;
+
+        console.log(myObject)
+        console.log(copyOfMyObject)
+
+
+        let theObject = {
+            a: true,
+            b: null,
+            c: 25
+        };
+        console.log(theObject["a"]) 
+        // If "a" is not in quotation, javascript engine searches for 'variable a' 
+        // which does not exist cause it wasn't declared
+
+        const objectName = "c"
+        console.log(theObject[objectName])
+
+        myObject["new" + "Property" + "Name"] = "Value for dynamically computed property name";
+        console.log(myObject)
+
+
+
     </script>       
 
             

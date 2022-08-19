@@ -1,65 +1,18 @@
+html {
+    font-size: calc(100vw/1440 * 10);
+}
+
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: white;
-    height: 100%;
-    font-family: Alegreya,"Palatino Linotype","Book Antiqua",Palatino,Georgia,"Times New Roman", serif;
 }
 
-nav {
-    color: white;
-    background-color: rgb(209, 15, 15);
-    font-weight: 800;
-    font-size: 120px;
-    padding-left: 10px;
-    padding-bottom: 15px;
-    border-bottom: 1px;
-    border-bottom-color: red;
-    border-bottom-style: solid;
-    position: static;
-    text-transform: uppercase;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
-h1 {
-    margin-top: 30px;
-}
-
-label {
-    margin-right: 40px;
-    padding-left: 10px;
-    font-weight: bolder;
-}
-#billAmount {
-    margin-left: 30px;
-}
-#tipAmount {
-    margin-left: 53px;
-}
-
-.bill {
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    padding: 6px 10px;
-    width: 70%;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-.bill:active {
-    border: 2px solid blue;
-}
-
-button {
-    background-color: rgb(0, 153, 255);
-    color: white;
-    border-radius: 5px;
-    margin-left: 237px;
-    border: none;
-    padding: 10px 7px;
-    font-weight: bolder;
-    cursor: pointer;
-}
-
-span {
-    padding-left: 10px;
-    font-weight: bold;
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    line-height: 4.5rem;
 }

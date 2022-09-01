@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../../../webdev/HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Static Page</title>
+</head>
+<body>
+    
+    
+    <div id="root"></div>
+
+    
+
+
+    <script type="text/babel">
+
+        function Navbar() {
+            return (
+                <header>
+                    <nav className="nav flex flex-between">
+                        <img src="./logoo.jpg" className="logo" alt="" />
+                        <ul className="navList flex flex-between">
+                            <li>Pricing</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                        </ul>
+                    </nav>
+                </header>
+            )
+        }
+
+        function BodySection() {
+            return (
+                <div className="bodySection">
+                    <h1 className="center">Reasons to learn React</h1>
+                    <ol className="list">
+                        <li>It makes for a better developer</li>
+                        <li>Easily hireable</li>
+                        <li>Is maintained by facebook</li>
+                        <li>Powers thousands of enterprise apps including mobile apps</li>
+                    </ol>
+                </div>
+            )
+        }
+
+        function FooterSection() {
+            return (
+                <p className="para margin-0">
+                    &copy; 2022 Dominic development. All rights reserved.
+                </p>
+            )
+        }
+            
+            
+        
+
+        ReactDOM.render(
+            <div>
+                <Navbar />
+                <BodySection />
+                <FooterSection />
+            </div>, 
+            document.getElementById("root"));
+
+
+
+    
+        
+        
+    </script>       
+
+            
+
+
+    
+        
+
+    
+
+
+</body>
+</html>

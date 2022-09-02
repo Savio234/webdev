@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../../../webdev/HTML/img/javascript.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Styled Page</title>
+</head>
+
+
+<body>
+    
+    
+    <div id="root"></div>
+
+    
+
+
+    <script type="text/babel">
+
+        function Navbar() {
+            return (
+                <header>
+                    <nav className="nav flex flex-between">
+                        <div className="nav-header flex">
+                            <img src="./logo.jpg" className="logo" alt="" />
+                            <h3 className="margin-0 nav-h">
+                                ReactFacts
+                            </h3>
+                        </div>
+
+                        <p className="margin-0 nav-text">
+                            React Course - Project 1
+                        </p>
+                    </nav>
+                </header>
+            )
+        }
+
+        function BodySection() {
+            return (
+                <div className="bodySection">
+                    <h1 className="center">Fun facts about React</h1>
+                    <ul className="list">
+                        <li>Was first released in 2013</li>
+                        <li>Was originally created by Jordan Walke</li>
+                        <li>Has over 100k stars on GitHub</li>
+                        <li>Is maintained by facebook</li>
+                        <li>Powers thousands of enterprise apps including mobile apps</li>
+                    </ul>
+                </div>
+            )
+        }
+
+        // function FooterSection() {
+        //     return (
+        //         <p className="para margin-0">
+        //             &copy; 2022 Dominic development. All rights reserved.
+        //         </p>
+        //     )
+        // }
+            
+            
+        
+
+        ReactDOM.render(
+            <div>
+                <Navbar />
+                <BodySection />
+            </div>, 
+            document.getElementById("root"));
+
+
+
+    
+        
+        
+    </script>       
+
+            
+
+
+    
+        
+
+    
+
+
+</body>
+</html>
